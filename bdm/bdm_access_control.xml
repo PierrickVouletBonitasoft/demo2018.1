@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<accessControlModel xmlns="http://documentation.bonitasoft.com/bdm-access-control-xml-schema/1.0">
+    <businessObjectRule businessObjectQualifiedName="com.company.model.OBDDepartment"/>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.OBDJobPosition"/>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.OBDEmployee"/>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.OBDHardwareItemAllocation"/>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.OBDHardwareItemDefinition"/>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.OBDSoftwareItemAllocation"/>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.OBDSoftwareItemDefinition"/>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.OBDPerson"/>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.OBDITReqts"/>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.HotelRequest"/>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.DataRequest">
+        <rule name="accessRule" usingDynamicProfiles="false">
+            <condition></condition>
+            <staticProfiles>
+                <profile>Process manager</profile>
+            </staticProfiles>
+            <dynamicProfiles></dynamicProfiles>
+            <attributes businessObjectQualifiedName="com.company.model.DataRequest">
+                <attribute name="requestor"/>
+                <attribute name="query"/>
+                <attribute name="approve"/>
+            </attributes>
+        </rule>
+    </businessObjectRule>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.DensoObject"/>
+</accessControlModel>
