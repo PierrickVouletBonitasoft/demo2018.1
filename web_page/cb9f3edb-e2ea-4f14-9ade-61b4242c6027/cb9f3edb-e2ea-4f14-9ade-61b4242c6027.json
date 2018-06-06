@@ -1,0 +1,495 @@
+{
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.4.34",
+  "id" : "cb9f3edb-e2ea-4f14-9ade-61b4242c6027",
+  "name" : "DensoDemo",
+  "lastUpdate" : 1528310441950,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 4,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "required" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "minLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "maxLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "readOnly" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "Version"
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
+      },
+      "placeholder" : {
+        "type" : "interpolation"
+      },
+      "value" : {
+        "type" : "variable",
+        "value" : "getDensoProcessVersion"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "text"
+      },
+      "min" : {
+        "type" : "constant"
+      },
+      "max" : {
+        "type" : "constant"
+      },
+      "step" : {
+        "type" : "constant",
+        "value" : 1
+      }
+    },
+    "reference" : "e2377934-a00a-4939-bc4e-ab8d18b05441",
+    "id" : "pbInput"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 4,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "required" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "minLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "maxLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "readOnly" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "Name"
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
+      },
+      "placeholder" : {
+        "type" : "interpolation"
+      },
+      "value" : {
+        "type" : "variable",
+        "value" : "getDensoProcessName"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "text"
+      },
+      "min" : {
+        "type" : "constant"
+      },
+      "max" : {
+        "type" : "constant"
+      },
+      "step" : {
+        "type" : "constant",
+        "value" : 1
+      }
+    },
+    "reference" : "6b3552f6-405b-4f41-b99c-04a49e2b4b11",
+    "id" : "pbInput"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 4,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "required" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "minLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "maxLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "readOnly" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "ID"
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
+      },
+      "placeholder" : {
+        "type" : "interpolation"
+      },
+      "value" : {
+        "type" : "variable",
+        "value" : "getDensoProcessId"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "text"
+      },
+      "min" : {
+        "type" : "constant"
+      },
+      "max" : {
+        "type" : "constant"
+      },
+      "step" : {
+        "type" : "constant",
+        "value" : 1
+      }
+    },
+    "reference" : "8911f7fd-c911-4fc7-96b9-4364ab8baacc",
+    "id" : "pbInput"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "disabled" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "Start a new process"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "primary"
+      },
+      "action" : {
+        "type" : "constant",
+        "value" : "POST"
+      },
+      "url" : {
+        "type" : "interpolation",
+        "value" : "../API/bpm/process/{{getDensoProcessId}}/instantiation"
+      },
+      "dataToSend" : {
+        "type" : "constant"
+      },
+      "dataFromSuccess" : {
+        "type" : "variable"
+      },
+      "dataFromError" : {
+        "type" : "variable"
+      },
+      "targetUrlOnSuccess" : {
+        "type" : "interpolation"
+      },
+      "collectionToModify" : {
+        "type" : "variable"
+      },
+      "collectionPosition" : {
+        "type" : "constant",
+        "value" : "Last"
+      },
+      "valueToAdd" : {
+        "type" : "constant"
+      },
+      "removeItem" : {
+        "type" : "variable"
+      }
+    },
+    "reference" : "90eef268-f21b-42a2-9751-bb194ef3dbb2",
+    "id" : "pbButton"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "headers" : {
+        "type" : "constant",
+        "value" : [ "Name", "Last Updated", "ID" ]
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Variable"
+      },
+      "apiUrl" : {
+        "type" : "expression",
+        "value" : "getMyTasks"
+      },
+      "params" : {
+        "type" : "constant"
+      },
+      "content" : {
+        "type" : "expression",
+        "value" : "getMyTasks"
+      },
+      "columnsKey" : {
+        "type" : "constant",
+        "value" : [ "displayName", "last_update_date | date", "id" ]
+      },
+      "sortColumns" : {
+        "type" : "constant"
+      },
+      "selectedRow" : {
+        "type" : "variable",
+        "value" : "selectedRow"
+      },
+      "pageSize" : {
+        "type" : "constant",
+        "value" : 10
+      },
+      "filter" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "072a7ad1-35df-431e-88f3-b94f8e04f7a3",
+    "id" : "pbDataTable"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      }
+    },
+    "reference" : "4be93818-9d14-4948-9fce-56f0d2c2537a",
+    "id" : "customRefresh"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "expression",
+        "value" : "taskString == \"{}\""
+      },
+      "url" : {
+        "type" : "expression",
+        "value" : "taskURL"
+      },
+      "style" : {
+        "type" : "constant",
+        "value" : "width:100%;height:500px"
+      }
+    },
+    "reference" : "a7fe3652-6c30-430d-9e8f-950da5c4c5c4",
+    "id" : "customIFrameV703"
+  } ] ],
+  "assets" : [ {
+    "id" : "9ce9d20a-b3ee-44e7-9b17-398226cffdae",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "93e5e3de-1551-42df-97a9-4e540d3163eb",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "7c56aa0f-e509-44af-a0d9-9472174e2191",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "getDensoProcess" : {
+      "type" : "url",
+      "value" : "http://localhost:8080/bonita/API/bpm/process?c=1&p=0&f=name=Denso&o=deploymentDate",
+      "exposed" : false
+    },
+    "getDensoProcessVersion" : {
+      "type" : "expression",
+      "value" : "if ($data.getDensoProcess && $data.getDensoProcess.length) {\r\n    var process = $data.getDensoProcess[0];\r\n    return process.version;\r\n}",
+      "exposed" : false
+    },
+    "getDensoProcessName" : {
+      "type" : "expression",
+      "value" : "if ($data.getDensoProcess && $data.getDensoProcess.length) {\r\n    var process = $data.getDensoProcess[0];\r\n    return process.name;\r\n}",
+      "exposed" : false
+    },
+    "getDensoProcessId" : {
+      "type" : "expression",
+      "value" : "if ($data.getDensoProcess && $data.getDensoProcess.length) {\r\n    var process = $data.getDensoProcess[0];\r\n    return process.id;\r\n}",
+      "exposed" : false
+    },
+    "getMyTasks" : {
+      "type" : "url",
+      "value" : "../API/bpm/task?c=10&p=0&o=state",
+      "exposed" : false
+    },
+    "taskString" : {
+      "type" : "expression",
+      "value" : "return JSON.stringify($data.selectedRow);",
+      "exposed" : false
+    },
+    "selectedRow" : {
+      "type" : "json",
+      "value" : "{}",
+      "exposed" : false
+    },
+    "user" : {
+      "type" : "url",
+      "value" : "../API/system/session/unusedId",
+      "exposed" : false
+    },
+    "userString" : {
+      "type" : "expression",
+      "value" : "return JSON.stringify($data.user);",
+      "exposed" : false
+    },
+    "getPeople" : {
+      "type" : "url",
+      "value" : "../API/identity/user?p=0&c=10000",
+      "exposed" : false
+    },
+    "createListOfPeopleForDropDown" : {
+      "type" : "expression",
+      "value" : "var people = [];\n\nfor(var i=1;i < $data.getPeople.length;i++) {\n    var person = {\"name\": $data.getPeople[i].firstname+\" \"+$data.getPeople[i].lastname,\n                    \"id\": $data.getPeople[i].id\n    };\n    people.push(person);\n}\n\nreturn people;",
+      "exposed" : false
+    },
+    "stringer" : {
+      "type" : "expression",
+      "value" : "return JSON.stringify($data.getPeople);",
+      "exposed" : false
+    },
+    "taskURL" : {
+      "type" : "expression",
+      "value" : "if($data.taskString != \"{}\"){\r\n    var url = \"/bonita/portal/form/taskInstance/\"+ $data.selectedRow.id;\r\n    console.log(\"URL: \", url);\r\n    return url;\r\n}",
+      "exposed" : false
+    },
+    "getMyTasks2" : {
+      "type" : "url",
+      "value" : "../API/bpm/humanTask?p=0&c=1000&f=assigned_id={{user.user_id}}&f=state=ready",
+      "exposed" : false
+    }
+  },
+  "uuid" : "cb9f3edb-e2ea-4f14-9ade-61b4242c6027",
+  "type" : "page"
+}

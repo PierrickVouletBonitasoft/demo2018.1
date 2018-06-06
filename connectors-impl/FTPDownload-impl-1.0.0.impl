@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>FTPDownload-impl</implementationId>
+  <implementationVersion>1.0.0</implementationVersion>
+  <definitionId>FTPDownload</definitionId>
+  <definitionVersion>1.0.0</definitionVersion>
+  <implementationClassname>org.mycompany.connector.FTPDownloadImpl</implementationClassname>
+  <hasSources>true</hasSources>
+  <description></description>
+  <jarDependencies>
+    <jarDependency>commons-net-3.6.jar</jarDependency>
+    <jarDependency>tika-core-1.14.jar</jarDependency>
+    <jarDependency>FTPDownload-impl-1.0.0.jar</jarDependency>
+  </jarDependencies>
+</implementation:connectorImplementation>

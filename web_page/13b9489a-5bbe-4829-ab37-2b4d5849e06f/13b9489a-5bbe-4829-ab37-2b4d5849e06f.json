@@ -1,0 +1,31 @@
+{
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.4.34",
+  "id" : "13b9489a-5bbe-4829-ab37-2b4d5849e06f",
+  "name" : "TestPage",
+  "lastUpdate" : 1528310434118,
+  "rows" : [ [ ] ],
+  "assets" : [ {
+    "id" : "64d8829f-756f-47db-bcae-ae35a0413721",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "e0f2581d-cb24-4b2b-88e8-68c2a0eabfe4",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "2983fdc3-ed36-4771-8faf-39ae8c68236d",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : { },
+  "uuid" : "13b9489a-5bbe-4829-ab37-2b4d5849e06f",
+  "type" : "page"
+}

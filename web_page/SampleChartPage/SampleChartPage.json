@@ -1,0 +1,333 @@
+{
+  "designerVersion" : "1.7.49",
+  "id" : "SampleChartPage",
+  "name" : "SampleChartPage",
+  "lastUpdate" : 1528313438561,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 4,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "42fee47c-a45e-4777-9cd7-adc673b0a15f",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Loans per month"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 3"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "center"
+        }
+      },
+      "reference" : "93ff9d20-f54c-44df-a52d-303590584db6",
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "Pie"
+        },
+        "data" : {
+          "type" : "constant",
+          "value" : [ 65, 59, 80, 81, 56, 55, 40 ]
+        },
+        "labels" : {
+          "type" : "constant",
+          "value" : [ "January", "February", "March", "April", "May", "June", "July" ]
+        },
+        "setLabels" : {
+          "type" : "constant",
+          "value" : [ "Default set label" ]
+        },
+        "legendHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "colors" : {
+          "type" : "constant"
+        },
+        "options" : {
+          "type" : "constant"
+        }
+      },
+      "reference" : "1fb3fc01-8a3d-488f-9105-1e27dd419c87",
+      "id" : "pbChart"
+    } ] ]
+  }, {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 4,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "42cdda6f-78cf-4764-87f5-c87c88e119cd",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Loan approvers"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 3"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "center"
+        }
+      },
+      "reference" : "d2c7e0e8-0a31-4f0e-a416-5c444af686aa",
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "Doughnut"
+        },
+        "data" : {
+          "type" : "constant",
+          "value" : [ "45", "30", "15", "10" ]
+        },
+        "labels" : {
+          "type" : "constant",
+          "value" : [ "Agent", "Manager", "VP", "Other" ]
+        },
+        "setLabels" : {
+          "type" : "constant",
+          "value" : [ "Default set label" ]
+        },
+        "legendHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "colors" : {
+          "type" : "constant"
+        },
+        "options" : {
+          "type" : "constant"
+        }
+      },
+      "reference" : "6595d0a2-a5dd-4053-8e1f-f378720ca86a",
+      "id" : "pbChart"
+    } ] ]
+  }, {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 4,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "1ae5c44d-9dc6-4bcc-a239-879d8215ef8d",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Loan amounts"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 3"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "center"
+        }
+      },
+      "reference" : "250de690-246f-40fb-a777-3d80a5bf9b4d",
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "Bar"
+        },
+        "data" : {
+          "type" : "constant",
+          "value" : [ "200", "120", "34" ]
+        },
+        "labels" : {
+          "type" : "constant",
+          "value" : [ "0-500000", "500001 - 1000000", "> 1000000" ]
+        },
+        "setLabels" : {
+          "type" : "constant",
+          "value" : [ "Default set label" ]
+        },
+        "legendHidden" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "colors" : {
+          "type" : "constant"
+        },
+        "options" : {
+          "type" : "constant"
+        }
+      },
+      "reference" : "88b07d71-22ad-48a6-847c-16d0ab5c372c",
+      "id" : "pbChart"
+    } ] ]
+  } ] ],
+  "assets" : [ {
+    "id" : "6325f9c0-e069-4c1a-82ed-8a43910bc1d5",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "633ca5dc-e3b9-4f84-9a63-6895cfb61b06",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : { },
+  "uuid" : "ee6ddbbf-3c35-4d3f-bd94-75ecb1c94fbe",
+  "type" : "page"
+}

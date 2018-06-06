@@ -1,0 +1,2227 @@
+{
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.4.26",
+  "id" : "7bc132ec-dc64-4299-8c54-1efc7488b5ab",
+  "name" : "registerNewEmployee",
+  "lastUpdate" : 1528310439201,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Enter information for new employee"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 2"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "e4cd1175-e9ce-4cda-8d3c-a23791110f16",
+    "id" : "pbTitle"
+  } ], [ {
+    "type" : "formContainer",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      }
+    },
+    "reference" : "5a4d8014-7c91-40b3-a85d-efb15b5d3437",
+    "id" : "pbFormContainer",
+    "container" : {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : { },
+      "reference" : "7849bd47-add6-49f1-99b3-383e01146fda",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "tabsContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "0836f8cd-8edc-4cac-b900-04672a5a7779",
+        "id" : "pbTabsContainer",
+        "tabs" : [ {
+          "container" : {
+            "type" : "container",
+            "dimension" : {
+              "xs" : 12
+            },
+            "propertyValues" : { },
+            "reference" : "927c3d91-9231-45a8-a9cf-3dcbd8046efa",
+            "id" : "pbContainer",
+            "rows" : [ [ {
+              "type" : "container",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "repeatedCollection" : {
+                  "type" : "variable"
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "readonly" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "widgetId" : {
+                  "type" : "constant"
+                },
+                "isDisplayed" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "label" : {
+                  "type" : "constant"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "class" : {
+                  "type" : "constant",
+                  "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.WidgetContainer"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "c1b512c9-d189-4f6d-b6ca-79d6892a67ff",
+              "id" : "pbContainer",
+              "rows" : [ [ {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 6,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "widgetId" : {
+                    "type" : "constant",
+                    "value" : "pbInput"
+                  },
+                  "isDisplayed" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "label" : {
+                    "type" : "constant",
+                    "value" : "First Name"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "text"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readonly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "class" : {
+                    "type" : "constant",
+                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newPersonInput.firstName"
+                  }
+                },
+                "reference" : "eda8a4e7-ca36-4855-a595-7c04982e7cd6",
+                "id" : "pbInput"
+              }, {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 6,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "widgetId" : {
+                    "type" : "constant",
+                    "value" : "pbInput"
+                  },
+                  "isDisplayed" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "label" : {
+                    "type" : "constant",
+                    "value" : "Last Name"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "text"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readonly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "class" : {
+                    "type" : "constant",
+                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newPersonInput.lastName"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "6f25bba5-8405-404b-ab67-0dc77dabe744",
+                "id" : "pbInput"
+              } ], [ {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 6,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "widgetId" : {
+                    "type" : "constant",
+                    "value" : "pbInput"
+                  },
+                  "isDisplayed" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "label" : {
+                    "type" : "constant",
+                    "value" : "Email"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "email"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readonly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "class" : {
+                    "type" : "constant",
+                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newPersonInput.email"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "33d380a8-719f-4de0-9487-450e5a5f203e",
+                "id" : "pbInput"
+              }, {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 6,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "widgetId" : {
+                    "type" : "constant",
+                    "value" : "pbInput"
+                  },
+                  "isDisplayed" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "label" : {
+                    "type" : "constant",
+                    "value" : "Mobile"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "number"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readonly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "class" : {
+                    "type" : "constant",
+                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newPersonInput.phone"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "68e75d92-c4c7-494b-b16e-81a043f4d2c0",
+                "id" : "pbInput"
+              } ], [ {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 4,
+                  "lg" : 3
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Gender"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : "Please select"
+                  },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "genderSelect"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newPersonInput.gender"
+                  }
+                },
+                "reference" : "fe6c7406-aa9f-4edb-ae22-8ac4ec8bb4b7",
+                "id" : "pbSelect"
+              }, {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 4,
+                  "lg" : 3
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "7d2ff7ed-95a5-42db-b14e-4e23821648a5",
+                "id" : "pbContainer",
+                "rows" : [ [ ] ]
+              }, {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 4,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "dateFormat" : {
+                    "type" : "constant",
+                    "value" : "MM/dd/yyyy"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "widgetId" : {
+                    "type" : "constant",
+                    "value" : "pbDatePicker"
+                  },
+                  "isDisplayed" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "label" : {
+                    "type" : "constant",
+                    "value" : "Date Of Birth"
+                  },
+                  "type" : {
+                    "type" : "constant"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "forceUTC" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readonly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "class" : {
+                    "type" : "constant",
+                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.DatePickerWidget"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newPersonInput.dateOfBirth"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "showToday" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "a10e8282-cdc0-4041-86c1-a1f62d32bf56",
+                "id" : "pbDatePicker"
+              } ], [ ] ]
+            } ] ]
+          },
+          "title" : "Personal details"
+        }, {
+          "container" : {
+            "type" : "container",
+            "dimension" : {
+              "xs" : 12
+            },
+            "propertyValues" : { },
+            "reference" : "555135d3-c9fd-4984-84df-f798911d45df",
+            "id" : "pbContainer",
+            "rows" : [ [ {
+              "type" : "container",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "repeatedCollection" : {
+                  "type" : "variable"
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "readonly" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "widgetId" : {
+                  "type" : "constant"
+                },
+                "isDisplayed" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "label" : {
+                  "type" : "constant"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "class" : {
+                  "type" : "constant",
+                  "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.WidgetContainer"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "ac3624c6-9727-41ea-a39e-0b1c37e7242b",
+              "id" : "pbContainer",
+              "rows" : [ [ {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 4,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Hiring manager"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : "Select an option"
+                  },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "listOfManager"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newEmployeeInput.hiringManager"
+                  }
+                },
+                "reference" : "4bc2bcc0-f8f9-4c3b-b92a-7f1b71b7ddc5",
+                "id" : "pbSelect"
+              }, {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 4,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "dateFormat" : {
+                    "type" : "constant",
+                    "value" : "MM/dd/yyyy"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "widgetId" : {
+                    "type" : "constant",
+                    "value" : "pbDatePicker"
+                  },
+                  "isDisplayed" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "label" : {
+                    "type" : "constant",
+                    "value" : "Start date"
+                  },
+                  "type" : {
+                    "type" : "constant"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "forceUTC" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readonly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "class" : {
+                    "type" : "constant",
+                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.DatePickerWidget"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newEmployeeInput.startDate"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "showToday" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "52f84e89-9eb3-4f63-a2ae-c268edc86d3f",
+                "id" : "pbDatePicker"
+              } ], [ {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 4,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Department"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : "Select a department"
+                  },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "departments"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newEmployeeInput.department"
+                  }
+                },
+                "reference" : "d2b61922-8878-4b6a-84d9-31fda2f7d11b",
+                "id" : "pbSelect"
+              }, {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 4,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Position"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : "Select an option"
+                  },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "positions"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newEmployeeInput.jobPosition"
+                  }
+                },
+                "reference" : "250a5086-6f69-4e6f-b881-09b17fa8e9a7",
+                "id" : "pbSelect"
+              } ], [ {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 4,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Home office"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : "Select an office"
+                  },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "homeOffices"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newEmployeeInput.homeOffice"
+                  }
+                },
+                "reference" : "81b7f57d-7379-43d7-a14b-69ca08374b0c",
+                "id" : "pbSelect"
+              }, {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 4,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Contract type"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : "Select an option"
+                  },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "contractTypes"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newEmployeeInput.contractType"
+                  }
+                },
+                "reference" : "0a561616-f6a1-4829-907e-7655b0e76010",
+                "id" : "pbSelect"
+              } ], [ {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 4,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "widgetId" : {
+                    "type" : "constant",
+                    "value" : "pbInput"
+                  },
+                  "isDisplayed" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "label" : {
+                    "type" : "constant",
+                    "value" : "Fixed gross salary (annual)"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "number"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readonly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "class" : {
+                    "type" : "constant",
+                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newEmployeeInput.fixedSalary"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "b70543e1-c6d3-4a24-979e-b2eabe78f3ea",
+                "id" : "pbInput"
+              }, {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 4,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "widgetId" : {
+                    "type" : "constant",
+                    "value" : "pbInput"
+                  },
+                  "isDisplayed" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "label" : {
+                    "type" : "constant",
+                    "value" : "Variable gross salary (annual)"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "number"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readonly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "class" : {
+                    "type" : "constant",
+                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.newEmployeeInput.variableSalary"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "8fa5c66a-3749-4d35-a064-e3845af8a729",
+                "id" : "pbInput"
+              } ] ]
+            } ] ]
+          },
+          "title" : "Job details"
+        }, {
+          "container" : {
+            "type" : "container",
+            "dimension" : {
+              "xs" : 12
+            },
+            "propertyValues" : { },
+            "reference" : "7f609cd1-da99-4dac-bbda-5b5897abb32b",
+            "id" : "pbContainer",
+            "rows" : [ [ {
+              "type" : "formContainer",
+              "dimension" : {
+                "xs" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "65a9a87d-5acc-499b-bacc-e8e4c414f89e",
+              "id" : "pbFormContainer",
+              "container" : {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12
+                },
+                "propertyValues" : { },
+                "reference" : "76f6ffc4-13d0-406b-b1d3-957819a44bfc",
+                "id" : "pbContainer",
+                "rows" : [ [ {
+                  "type" : "component",
+                  "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 5,
+                    "lg" : 6
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "text" : {
+                      "type" : "interpolation",
+                      "value" : "Mandatory documents"
+                    },
+                    "level" : {
+                      "type" : "constant",
+                      "value" : "Level 4"
+                    },
+                    "alignment" : {
+                      "type" : "constant",
+                      "value" : "left"
+                    }
+                  },
+                  "reference" : "d7f5044f-814c-4053-9a19-fc3132cc09f2",
+                  "id" : "pbTitle"
+                }, {
+                  "type" : "component",
+                  "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 7,
+                    "lg" : 6
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "text" : {
+                      "type" : "interpolation",
+                      "value" : "Optional documents"
+                    },
+                    "level" : {
+                      "type" : "constant",
+                      "value" : "Level 4"
+                    },
+                    "alignment" : {
+                      "type" : "constant",
+                      "value" : "left"
+                    }
+                  },
+                  "reference" : "f18768a1-01db-4335-a695-2d156caf0ee8",
+                  "id" : "pbTitle"
+                } ], [ {
+                  "type" : "component",
+                  "dimension" : {
+                    "md" : 5,
+                    "sm" : 12,
+                    "xs" : 12,
+                    "lg" : 6
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "widgetId" : {
+                      "type" : "constant",
+                      "value" : "pbUpload"
+                    },
+                    "isDisplayed" : {
+                      "type" : "constant",
+                      "value" : true
+                    },
+                    "labelWidth" : {
+                      "type" : "constant",
+                      "value" : 1
+                    },
+                    "label" : {
+                      "type" : "constant",
+                      "value" : "Curriculum Vitae Document Input"
+                    },
+                    "required" : {
+                      "type" : "constant",
+                      "value" : true
+                    },
+                    "url" : {
+                      "type" : "constant",
+                      "value" : "/bonita/API/formFileUpload"
+                    },
+                    "labelHidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "readonly" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "labelPosition" : {
+                      "type" : "constant",
+                      "value" : "top"
+                    },
+                    "placeholder" : {
+                      "type" : "constant"
+                    },
+                    "alignment" : {
+                      "type" : "constant",
+                      "value" : "left"
+                    },
+                    "class" : {
+                      "type" : "constant",
+                      "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.FileUploadWidget"
+                    },
+                    "dimension" : {
+                      "type" : "constant",
+                      "value" : 12
+                    },
+                    "value" : {
+                      "type" : "variable",
+                      "value" : "formInput.curriculumVitaeDocumentInput"
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "errorContent" : {
+                      "type" : "variable"
+                    }
+                  },
+                  "reference" : "6e80748f-e375-4410-8bec-bed691138373",
+                  "id" : "pbUpload"
+                }, {
+                  "type" : "component",
+                  "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 5,
+                    "lg" : 6
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "required" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "labelHidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "label" : {
+                      "type" : "interpolation",
+                      "value" : "Health Insurance"
+                    },
+                    "labelPosition" : {
+                      "type" : "constant",
+                      "value" : "top"
+                    },
+                    "labelWidth" : {
+                      "type" : "constant",
+                      "value" : 4
+                    },
+                    "placeholder" : {
+                      "type" : "interpolation"
+                    },
+                    "url" : {
+                      "type" : "constant",
+                      "value" : "../API/formFileUpload"
+                    },
+                    "value" : {
+                      "type" : "variable",
+                      "value" : "formInput.healthInsuranceDocumentInput"
+                    },
+                    "errorContent" : {
+                      "type" : "variable"
+                    }
+                  },
+                  "reference" : "d34f2e07-fe96-4a20-988d-1a7ecd15e178",
+                  "id" : "pbUpload"
+                } ], [ {
+                  "type" : "component",
+                  "dimension" : {
+                    "md" : 5,
+                    "sm" : 12,
+                    "xs" : 12,
+                    "lg" : 6
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "widgetId" : {
+                      "type" : "constant",
+                      "value" : "pbUpload"
+                    },
+                    "isDisplayed" : {
+                      "type" : "constant",
+                      "value" : true
+                    },
+                    "labelWidth" : {
+                      "type" : "constant",
+                      "value" : 1
+                    },
+                    "label" : {
+                      "type" : "constant",
+                      "value" : "Contract Document Input"
+                    },
+                    "required" : {
+                      "type" : "constant",
+                      "value" : true
+                    },
+                    "url" : {
+                      "type" : "constant",
+                      "value" : "/bonita/API/formFileUpload"
+                    },
+                    "labelHidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "readonly" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "labelPosition" : {
+                      "type" : "constant",
+                      "value" : "top"
+                    },
+                    "placeholder" : {
+                      "type" : "constant"
+                    },
+                    "alignment" : {
+                      "type" : "constant",
+                      "value" : "left"
+                    },
+                    "class" : {
+                      "type" : "constant",
+                      "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.FileUploadWidget"
+                    },
+                    "dimension" : {
+                      "type" : "constant",
+                      "value" : 12
+                    },
+                    "value" : {
+                      "type" : "variable",
+                      "value" : "formInput.contractDocumentInput"
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "errorContent" : {
+                      "type" : "variable"
+                    }
+                  },
+                  "reference" : "b090d287-a74f-4dc0-b9ad-4abdc86669af",
+                  "id" : "pbUpload"
+                }, {
+                  "type" : "component",
+                  "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 5,
+                    "lg" : 6
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "required" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "labelHidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "label" : {
+                      "type" : "interpolation",
+                      "value" : "Direct Deposit Authorization"
+                    },
+                    "labelPosition" : {
+                      "type" : "constant",
+                      "value" : "top"
+                    },
+                    "labelWidth" : {
+                      "type" : "constant",
+                      "value" : 4
+                    },
+                    "placeholder" : {
+                      "type" : "interpolation"
+                    },
+                    "url" : {
+                      "type" : "constant",
+                      "value" : "../API/formFileUpload"
+                    },
+                    "value" : {
+                      "type" : "variable",
+                      "value" : "formInput.salaryAuthorizationDocumentInput"
+                    },
+                    "errorContent" : {
+                      "type" : "variable"
+                    }
+                  },
+                  "reference" : "84d89404-442a-4cb3-bf88-2c4c68ef942f",
+                  "id" : "pbUpload"
+                } ], [ {
+                  "type" : "component",
+                  "dimension" : {
+                    "md" : 5,
+                    "sm" : 12,
+                    "xs" : 12,
+                    "lg" : 6
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "widgetId" : {
+                      "type" : "constant",
+                      "value" : "pbUpload"
+                    },
+                    "isDisplayed" : {
+                      "type" : "constant",
+                      "value" : true
+                    },
+                    "labelWidth" : {
+                      "type" : "constant",
+                      "value" : 1
+                    },
+                    "label" : {
+                      "type" : "constant",
+                      "value" : "Work Eligibility Document Input"
+                    },
+                    "required" : {
+                      "type" : "constant",
+                      "value" : true
+                    },
+                    "url" : {
+                      "type" : "constant",
+                      "value" : "/bonita/API/formFileUpload"
+                    },
+                    "labelHidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "readonly" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "labelPosition" : {
+                      "type" : "constant",
+                      "value" : "top"
+                    },
+                    "placeholder" : {
+                      "type" : "constant"
+                    },
+                    "alignment" : {
+                      "type" : "constant",
+                      "value" : "left"
+                    },
+                    "class" : {
+                      "type" : "constant",
+                      "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.FileUploadWidget"
+                    },
+                    "dimension" : {
+                      "type" : "constant",
+                      "value" : 12
+                    },
+                    "value" : {
+                      "type" : "variable",
+                      "value" : "formInput.workEligibilityDocumentInput"
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "errorContent" : {
+                      "type" : "variable"
+                    }
+                  },
+                  "reference" : "bb790d43-3efd-4c21-956a-ce413d954026",
+                  "id" : "pbUpload"
+                }, {
+                  "type" : "component",
+                  "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 5,
+                    "lg" : 6
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "required" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "labelHidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "label" : {
+                      "type" : "interpolation",
+                      "value" : "Pension Benefits"
+                    },
+                    "labelPosition" : {
+                      "type" : "constant",
+                      "value" : "top"
+                    },
+                    "labelWidth" : {
+                      "type" : "constant",
+                      "value" : 4
+                    },
+                    "placeholder" : {
+                      "type" : "interpolation"
+                    },
+                    "url" : {
+                      "type" : "constant",
+                      "value" : "../API/formFileUpload"
+                    },
+                    "value" : {
+                      "type" : "variable",
+                      "value" : "formInput.pensionBenefitsDocumentInput"
+                    },
+                    "errorContent" : {
+                      "type" : "variable"
+                    }
+                  },
+                  "reference" : "0c552fed-9950-4dff-95d0-c59c65c60c8a",
+                  "id" : "pbUpload"
+                } ], [ {
+                  "type" : "component",
+                  "dimension" : {
+                    "md" : 5,
+                    "sm" : 12,
+                    "xs" : 12,
+                    "lg" : 6
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "widgetId" : {
+                      "type" : "constant",
+                      "value" : "pbUpload"
+                    },
+                    "isDisplayed" : {
+                      "type" : "constant",
+                      "value" : true
+                    },
+                    "labelWidth" : {
+                      "type" : "constant",
+                      "value" : 1
+                    },
+                    "label" : {
+                      "type" : "constant",
+                      "value" : "Identity Document Input"
+                    },
+                    "required" : {
+                      "type" : "constant",
+                      "value" : true
+                    },
+                    "url" : {
+                      "type" : "constant",
+                      "value" : "/bonita/API/formFileUpload"
+                    },
+                    "labelHidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "readonly" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "labelPosition" : {
+                      "type" : "constant",
+                      "value" : "top"
+                    },
+                    "placeholder" : {
+                      "type" : "constant"
+                    },
+                    "alignment" : {
+                      "type" : "constant",
+                      "value" : "left"
+                    },
+                    "class" : {
+                      "type" : "constant",
+                      "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.FileUploadWidget"
+                    },
+                    "dimension" : {
+                      "type" : "constant",
+                      "value" : 12
+                    },
+                    "value" : {
+                      "type" : "variable",
+                      "value" : "formInput.identityDocumentInput"
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "errorContent" : {
+                      "type" : "variable"
+                    }
+                  },
+                  "reference" : "14bb2911-4aff-4ea5-bc48-57e2d57d2de3",
+                  "id" : "pbUpload"
+                }, {
+                  "type" : "container",
+                  "dimension" : {
+                    "xs" : 12,
+                    "sm" : 12,
+                    "md" : 7,
+                    "lg" : 6
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "repeatedCollection" : {
+                      "type" : "variable"
+                    }
+                  },
+                  "reference" : "79783483-d9d7-419d-bc55-494555c5f982",
+                  "id" : "pbContainer",
+                  "rows" : [ [ ] ]
+                } ] ]
+              }
+            } ], [ ] ]
+          },
+          "title" : "Documentation"
+        }, {
+          "container" : {
+            "type" : "container",
+            "dimension" : {
+              "xs" : 12
+            },
+            "propertyValues" : { },
+            "reference" : "194effd3-5310-4c40-8145-bd8d63824600",
+            "id" : "pbContainer",
+            "rows" : [ [ {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "inline" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Benefits"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "availableValues" : {
+                  "type" : "expression",
+                  "value" : "benefits"
+                },
+                "displayedKey" : {
+                  "type" : "constant"
+                },
+                "returnedKey" : {
+                  "type" : "constant"
+                },
+                "selectedValues" : {
+                  "type" : "variable",
+                  "value" : "formInput.newEmployeeInput.benefits"
+                }
+              },
+              "reference" : "92ec9cd4-32f8-477e-ba04-47be3dc5f419",
+              "id" : "pbChecklist"
+            } ] ]
+          },
+          "title" : "Benefits"
+        } ]
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Submit button will become active once all required fields are filled in. Please go through each tab to ensure required fields (marked with *) have a value."
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "25501516-4e90-4cfd-aa2b-d7fb568dc670",
+        "id" : "pbText"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "removeItem" : {
+            "type" : "variable"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbButton"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "isDisplayed" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "constant",
+            "value" : "Submit"
+          },
+          "dataToSend" : {
+            "type" : "expression",
+            "value" : "formOutput"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "readonly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "collectionPosition" : {
+            "type" : "constant"
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation",
+            "value" : "/bonita/apps/hrmgmt/overview/"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Start process"
+          },
+          "collectionToModify" : {
+            "type" : "variable"
+          },
+          "valueToAdd" : {
+            "type" : "expression"
+          },
+          "disabled" : {
+            "type" : "expression",
+            "value" : "$form.$invalid"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.ButtonWidget"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "dataFromSuccess" : {
+            "type" : "variable"
+          },
+          "dataFromError" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "d85af9bd-1b73-4f9a-9026-a81bdbf00b8e",
+        "id" : "pbButton"
+      } ] ]
+    }
+  } ] ],
+  "assets" : [ {
+    "id" : "a615f90c-96ad-4a1b-b3ef-daaccb99bd87",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "bd94c454-d3d8-428d-8812-da63c23c543d",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "62e15359-871f-4e48-a11f-6753d35d3010",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "formInput" : {
+      "type" : "json",
+      "value" : "{\r\n  \"newPersonInput\" : {\r\n    \"firstName\" : \"John\",\r\n    \"lastName\" : \"Smith\",\r\n    \"email\" : \"john.smith@gmail.com\",\r\n    \"phone\" : 9175551234,\r\n    \"dateOfBirth\" : null,\r\n    \"gender\" : \"Male\"\r\n  },\r\n  \"newEmployeeInput\" : {\r\n    \"department\" : \"Accounting\",  \r\n    \"jobPosition\" : \"Analyst\",\r\n    \"hiringManager\" : \"Zachary Williamson\",\r\n    \"fixedSalary\" : 50000,\r\n    \"startDate\" : null,\r\n    \"variableSalary\" : 10000,\r\n    \"homeOffice\" : \"New York\",\r\n    \"contractType\" : \"Internship\",\r\n    \"benefits\": []\r\n  },\r\n  \"curriculumVitaeDocumentInput\" : null,\r\n  \"contractDocumentInput\" : null,\r\n  \"workEligibilityDocumentInput\" : null,\r\n  \"identityDocumentInput\" : null,\r\n  \"healthInsuranceDocumentInput\": null,\r\n  \"salaryAuthorizationDocumentInput\": null,\r\n  \"pensionBenefitsDocumentInput\": null\r\n}",
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : "return {\n\t'newPersonInput': $data.formInput.newPersonInput,\n\t'newEmployeeInput': $data.formInput.newEmployeeInput,\n\t'curriculumVitaeDocumentInput': $data.formInput.curriculumVitaeDocumentInput,\n\t'contractDocumentInput': $data.formInput.contractDocumentInput,\n\t'workEligibilityDocumentInput': $data.formInput.workEligibilityDocumentInput,\n\t'identityDocumentInput': $data.formInput.identityDocumentInput,\n\t'healthInsuranceDocumentInput': $data.formInput.healthInsuranceDocumentInput,\n    'salaryAuthorizationDocumentInput': $data.formInput.salaryAuthorizationDocumentInput,\n    'pensionBenefitsDocumentInput':$data.formInput.pensionBenefitsDocumentInput,\n    'newITReqtsInput':{'hwReqts':[], 'swReqts':[]}\n};",
+      "exposed" : false
+    },
+    "genderSelect" : {
+      "type" : "json",
+      "value" : "[\"Male\",\"Female\"]",
+      "exposed" : false
+    },
+    "homeOffices" : {
+      "type" : "json",
+      "value" : "[\"Paris\", \"Grenoble\", \"San Francisco\", \"New York\"]",
+      "exposed" : false
+    },
+    "contractTypes" : {
+      "type" : "json",
+      "value" : "[\"Long Term\", \"Internship\", \"Short Term (CDD)\", \"Indefinitely (CDI)\"]",
+      "exposed" : false
+    },
+    "managers" : {
+      "type" : "url",
+      "value" : "../API/identity/user?p=0&c=5&o=lastname%20ASC&f=enabled=true&f=group_id=3",
+      "exposed" : false
+    },
+    "listOfManager" : {
+      "type" : "expression",
+      "value" : "var managers = [];\n\nfor (var i=0; i < $data.managers.length; i++) {\n    managers.push($data.managers[i].firstname + \" \" +$data.managers[i].lastname);\n    //console.log(\"help\");\n}\nreturn managers;",
+      "exposed" : false
+    },
+    "departments" : {
+      "type" : "json",
+      "value" : "[\"Facilities Management\", \"Accounting\", \"IT Department\", \"Telecom Services\"]",
+      "exposed" : false
+    },
+    "positions" : {
+      "type" : "expression",
+      "value" : "var positions = [];\nconsole.log(\"dept is \" + $data.formInput.newEmployeeInput.department);\nswitch($data.formInput.newEmployeeInput.department) {\n    case \"Facilities Management\":\n        positions.push(\"Supervisor\");\n        positions.push(\"Porter\");\n        positions.push(\"Electrician\");\n        return positions;\n    \n    case \"Accounting\":\n        positions.push(\"Analyst\");\n        positions.push(\"Financial Officer\");\n        positions.push(\"Audit Specialist\");\n        return positions;\n    \n    case \"IT Department\":\n        positions.push(\"Sysadmin\");\n        positions.push(\"Developer\");\n        positions.push(\"Project Manager\");\n        return positions;\n        \n    case \"Telecom Services\":\n        positions.push(\"Field Service Engineer\");\n        positions.push(\"Handheld Technician\");\n        positions.push(\"AV Ops\");\n        return positions;\n    \n    default:\n        positions.push(\"\");\n        return positions;\n}",
+      "exposed" : false
+    },
+    "benefits" : {
+      "type" : "json",
+      "value" : "[\"Car\",\"Meal Vouchers\",\"Stocks & Shares\",\"Mobile Phone\",\"Home Internet\"]",
+      "exposed" : false
+    }
+  },
+  "uuid" : "7bc132ec-dc64-4299-8c54-1efc7488b5ab",
+  "type" : "form"
+}

@@ -1,0 +1,1132 @@
+{
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.4.26",
+  "id" : "50efa93a-35fd-4668-a94d-b864380ce64f",
+  "name" : "HRManagerPage",
+  "lastUpdate" : 1528310437013,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 2,
+      "sm" : 3,
+      "md" : 3,
+      "lg" : 3
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Locations"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 3"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "center"
+      }
+    },
+    "reference" : "8f30a1ff-e7c1-403b-9d20-a5a22188ecf3",
+    "id" : "pbTitle"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 2,
+      "sm" : 3,
+      "md" : 3,
+      "lg" : 3
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Department"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 3"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "center"
+      }
+    },
+    "reference" : "23ae4192-a98c-470e-bd01-543e1c6a00fc",
+    "id" : "pbTitle"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 2,
+      "sm" : 3,
+      "md" : 3,
+      "lg" : 3
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Engagement Type"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 3"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "center"
+      }
+    },
+    "reference" : "1b0105fb-ffaf-4a07-b2b3-fec4128a2ca1",
+    "id" : "pbTitle"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 2,
+      "sm" : 3,
+      "md" : 3,
+      "lg" : 3
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Job Position"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 3"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "center"
+      }
+    },
+    "reference" : "722201c3-e21c-4d26-86dd-56027e5cb659",
+    "id" : "pbTitle"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 2,
+      "sm" : 3,
+      "md" : 3,
+      "lg" : 3
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Pie"
+      },
+      "data" : {
+        "type" : "expression",
+        "value" : "getHomeOfficeData.data"
+      },
+      "labels" : {
+        "type" : "expression",
+        "value" : "getHomeOfficeData.labels"
+      },
+      "setLabels" : {
+        "type" : "constant",
+        "value" : [ "Locations" ]
+      },
+      "legendHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "colors" : {
+        "type" : "constant",
+        "value" : [ ]
+      },
+      "options" : {
+        "type" : "constant",
+        "value" : ""
+      }
+    },
+    "reference" : "174fc244-71b2-464a-9d75-9d0fba48918a",
+    "id" : "pbChart"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 2,
+      "sm" : 3,
+      "md" : 3,
+      "lg" : 3
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Pie"
+      },
+      "data" : {
+        "type" : "expression",
+        "value" : "getDepartment.data"
+      },
+      "labels" : {
+        "type" : "expression",
+        "value" : "getDepartment.labels"
+      },
+      "setLabels" : {
+        "type" : "constant",
+        "value" : [ "Default set label" ]
+      },
+      "legendHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "colors" : {
+        "type" : "constant"
+      },
+      "options" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "ff24c33d-2fa6-4df5-9e87-dc9d044c8a27",
+    "id" : "pbChart"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 2,
+      "sm" : 3,
+      "md" : 3,
+      "lg" : 3
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Doughnut"
+      },
+      "data" : {
+        "type" : "expression",
+        "value" : "getContractTypeData.data"
+      },
+      "labels" : {
+        "type" : "expression",
+        "value" : "getContractTypeData.labels"
+      },
+      "setLabels" : {
+        "type" : "constant",
+        "value" : [ "Default set label" ]
+      },
+      "legendHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "colors" : {
+        "type" : "constant",
+        "value" : [ ]
+      },
+      "options" : {
+        "type" : "constant",
+        "value" : "{ \"cutoutPercentage\" : 10}"
+      }
+    },
+    "reference" : "18b589ea-51bb-46d8-a3b3-79769e7538ce",
+    "id" : "pbChart"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 2,
+      "sm" : 3,
+      "md" : 3,
+      "lg" : 3
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Pie"
+      },
+      "data" : {
+        "type" : "expression",
+        "value" : "getJobPosition.data"
+      },
+      "labels" : {
+        "type" : "expression",
+        "value" : "getJobPosition.labels"
+      },
+      "setLabels" : {
+        "type" : "constant",
+        "value" : [ "Default set label" ]
+      },
+      "legendHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "colors" : {
+        "type" : "constant"
+      },
+      "options" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "99b7caba-9e18-4774-aeb7-de1e66041fd0",
+    "id" : "pbChart"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 2,
+      "lg" : 2
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "required" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "minLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "maxLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "readOnly" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "Filter"
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
+      },
+      "placeholder" : {
+        "type" : "interpolation"
+      },
+      "value" : {
+        "type" : "variable",
+        "value" : "filter"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "text"
+      },
+      "min" : {
+        "type" : "constant"
+      },
+      "max" : {
+        "type" : "constant"
+      },
+      "step" : {
+        "type" : "constant",
+        "value" : 1
+      }
+    },
+    "reference" : "36674dcc-590d-460b-80e4-1e048e6a5cd0",
+    "id" : "pbInput"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 10,
+      "lg" : 10
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "+ Add new employee"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "URL"
+      },
+      "targetUrl" : {
+        "type" : "expression",
+        "value" : "getProcessStartURL"
+      },
+      "pageToken" : {
+        "type" : "constant"
+      },
+      "processName" : {
+        "type" : "expression",
+        "value" : "processName"
+      },
+      "processVersion" : {
+        "type" : "expression",
+        "value" : "processVersion"
+      },
+      "taskId" : {
+        "type" : "constant"
+      },
+      "caseId" : {
+        "type" : "constant"
+      },
+      "target" : {
+        "type" : "constant",
+        "value" : "_self"
+      },
+      "appToken" : {
+        "type" : "constant"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "right"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "info"
+      }
+    },
+    "reference" : "f03fe4a4-4556-4ae9-af83-db0d3f44d274",
+    "id" : "pbLink"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "headers" : {
+        "type" : "constant",
+        "value" : [ "Name", "Position", "Office", "Manager", "Department", "Status" ]
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Variable"
+      },
+      "apiUrl" : {
+        "type" : "constant",
+        "value" : "../API/"
+      },
+      "params" : {
+        "type" : "constant"
+      },
+      "content" : {
+        "type" : "expression",
+        "value" : "mergedData"
+      },
+      "columnsKey" : {
+        "type" : "constant",
+        "value" : [ "name", "jobPosition", "homeOffice", "manager", "department", "status" ]
+      },
+      "sortColumns" : {
+        "type" : "constant"
+      },
+      "selectedRow" : {
+        "type" : "variable",
+        "value" : "selectedRow"
+      },
+      "pageSize" : {
+        "type" : "constant",
+        "value" : 10
+      },
+      "filter" : {
+        "type" : "expression",
+        "value" : "filter"
+      }
+    },
+    "reference" : "63064bb8-9701-441b-a827-ed105298d125",
+    "id" : "pbDataTable"
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "expression",
+        "value" : "selectedRow.name == null"
+      },
+      "repeatedCollection" : {
+        "type" : "variable"
+      }
+    },
+    "reference" : "ed5ad2c7-3cb1-4d74-ae06-e504561aac65",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Additional details"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 4"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "66aea6a3-ba3f-477f-a91a-a374ef3a4646",
+      "id" : "pbTitle"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "disabled" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Clear"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "right"
+        },
+        "buttonStyle" : {
+          "type" : "constant",
+          "value" : "info"
+        },
+        "variableToClear" : {
+          "type" : "variable",
+          "value" : "selectedRow"
+        },
+        "valueToSetClearedVariable" : {
+          "type" : "constant",
+          "value" : "{}"
+        }
+      },
+      "reference" : "910cc551-6e2c-4501-84cc-73cb647ba27e",
+      "id" : "customFunctionButton"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 2,
+        "lg" : 2
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Name"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "selectedRow.name"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "db29eddc-4199-4097-98fb-ee82e8448dbd",
+      "id" : "pbInput"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 2,
+        "lg" : 2
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "ID"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "selectedRow.id"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "28a99077-fccd-45fd-8724-ccc4d4509c64",
+      "id" : "pbInput"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 2,
+        "lg" : 2
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Fixed salary"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "selectedRow.fixedSalary"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "14cc928f-bb83-485a-b9a2-f8d292ee343f",
+      "id" : "pbInput"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 2,
+        "lg" : 3
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Variable salary"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "selectedRow.variableSalary"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "9bb72cf8-6b5d-4cdf-b7bf-85ba5797318f",
+      "id" : "pbInput"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 4,
+        "lg" : 3
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Start date"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation",
+          "value" : "Enter a date (mm/dd/yyyy)"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "selectedRow.startDate"
+        },
+        "dateFormat" : {
+          "type" : "constant",
+          "value" : "MM/dd/yyyy"
+        },
+        "showToday" : {
+          "type" : "constant",
+          "value" : false
+        }
+      },
+      "reference" : "ea34a12e-473a-44f5-b1e9-84e81693b2cc",
+      "id" : "pbDatePicker"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "url" : {
+          "type" : "expression",
+          "value" : "getTaskURL"
+        },
+        "style" : {
+          "type" : "constant",
+          "value" : "width:100%; border: 0px solid; min-height: 900px;"
+        }
+      },
+      "reference" : "06c7c299-680f-4798-8c2a-b1228021c4fe",
+      "id" : "customIFrameV703"
+    } ] ]
+  } ] ],
+  "assets" : [ {
+    "id" : "3abe68c9-975e-4b03-bf53-02088234c337",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "1254e5e2-58b0-4b4a-a930-21e406ee15a6",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "15d81f66-6b33-4f29-99c9-db8aa4d84dcb",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "getNewEmployeeData" : {
+      "type" : "url",
+      "value" : "../API/bdm/businessData/com.company.model.OBDEmployee?q=getEmployees&p=0&c=0",
+      "exposed" : false
+    },
+    "getHomeOfficeData" : {
+      "type" : "expression",
+      "value" : "var dataMap = {};\n\nfor(var i=0; i < $data.getNewEmployeeData.length; i++){\n    if($data.getNewEmployeeData[i].homeOffice in dataMap){\n        var oldCount = dataMap[$data.getNewEmployeeData[i].homeOffice];\n        dataMap[$data.getNewEmployeeData[i].homeOffice] = oldCount + 1;\n    } else {\n        dataMap[$data.getNewEmployeeData[i].homeOffice] = 1;\n    }\n}\n\nvar chartData = {\"labels\":[],\n                 \"data\":[]\n                }\n\nObject.keys(dataMap).forEach(function(key) {\n    chartData.labels.push(key);\n    chartData.data.push(dataMap[key]);\n});\n\nreturn chartData;",
+      "exposed" : false
+    },
+    "getContractTypeData" : {
+      "type" : "expression",
+      "value" : "var dataMap = {};\n\nfor(var i=0; i < $data.getNewEmployeeData.length; i++){\n    if($data.getNewEmployeeData[i].contractType in dataMap){\n        var oldCount = dataMap[$data.getNewEmployeeData[i].contractType];\n        dataMap[$data.getNewEmployeeData[i].contractType] = oldCount + 1;\n    } else {\n        dataMap[$data.getNewEmployeeData[i].contractType] = 1;\n    }\n}\n\nvar chartData = {\"labels\":[],\n                 \"data\":[]\n                }\n\nObject.keys(dataMap).forEach(function(key) {\n    chartData.labels.push(key);\n    chartData.data.push(dataMap[key]);\n});\n\nreturn chartData;",
+      "exposed" : false
+    },
+    "getDepartment" : {
+      "type" : "expression",
+      "value" : "var dataMap = {};\n\nfor(var i=0; i < $data.getNewEmployeeData.length; i++){\n    if($data.getNewEmployeeData[i].department in dataMap){\n        var oldCount = dataMap[$data.getNewEmployeeData[i].department];\n        dataMap[$data.getNewEmployeeData[i].department] = oldCount + 1;\n    } else {\n        dataMap[$data.getNewEmployeeData[i].department] = 1;\n    }\n}\n\nvar chartData = {\"labels\":[],\n                 \"data\":[]\n                }\n\nObject.keys(dataMap).forEach(function(key) {\n    chartData.labels.push(key);\n    chartData.data.push(dataMap[key]);\n});\n\nreturn chartData;",
+      "exposed" : false
+    },
+    "getJobPosition" : {
+      "type" : "expression",
+      "value" : "var dataMap = {};\n\nfor(var i=0; i < $data.getNewEmployeeData.length; i++){\n    if($data.getNewEmployeeData[i].jobPosition in dataMap){\n        var oldCount = dataMap[$data.getNewEmployeeData[i].jobPosition];\n        dataMap[$data.getNewEmployeeData[i].jobPosition] = oldCount + 1;\n    } else {\n        dataMap[$data.getNewEmployeeData[i].jobPosition] = 1;\n    }\n}\n\nvar chartData = {\"labels\":[],\n                 \"data\":[]\n                }\n\nObject.keys(dataMap).forEach(function(key) {\n    chartData.labels.push(key);\n    chartData.data.push(dataMap[key]);\n});\n\nreturn chartData;",
+      "exposed" : false
+    },
+    "getPersonData" : {
+      "type" : "url",
+      "value" : "../API/bdm/businessData/com.company.model.OBDPerson?q=getPersonData&p=0&c=0",
+      "exposed" : false
+    },
+    "personString" : {
+      "type" : "expression",
+      "value" : "return JSON.stringify($data.getPersonData);",
+      "exposed" : false
+    },
+    "mergedData" : {
+      "type" : "expression",
+      "value" : "var employees = $data.getNewEmployeeData;\nvar persons = $data.getPersonData;\nvar mergedData = [];\nvar mergedObj = {};\n\n\nfor(var i=0; i < $data.getNewEmployeeData.length; ++i){\n    for(var j=0; j < $data.getPersonData.length; ++j){\n        if($data.getNewEmployeeData[i].id === $data.getPersonData[j].id){\n            mergedObj = {\"name\":$data.getPersonData[j].firstName+\" \"+$data.getPersonData[j].lastName,\n                         \"jobPosition\":$data.getNewEmployeeData[i].jobPosition,\n                         \"homeOffice\":$data.getNewEmployeeData[i].homeOffice,\n                         \"manager\":$data.getNewEmployeeData[i].hiringManager,\n                         \"department\":$data.getNewEmployeeData[i].department,\n                         \"status\":$data.getNewEmployeeData[i].status,\n                         \"id\":$data.getNewEmployeeData[i].id_string,\n                         \"fixedSalary\":$data.getNewEmployeeData[i].fixedSalary,\n                         \"variableSalary\":$data.getNewEmployeeData[i].variableSalary,\n                         \"contractType\":$data.getNewEmployeeData[i].contractType,\n                         \"startDate\":$data.getNewEmployeeData[i].startDate\n            }\n            mergedData.push(mergedObj);\n        }\n    }\n}\n\nreturn mergedData;",
+      "exposed" : false
+    },
+    "filter" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "selectedRow" : {
+      "type" : "json",
+      "value" : "{}",
+      "exposed" : false
+    },
+    "processObject" : {
+      "type" : "url",
+      "value" : "../API/bpm/process?c=1&p=0&f=name=Onboarding&o=deploymentDate",
+      "exposed" : false
+    },
+    "processId" : {
+      "type" : "expression",
+      "value" : "if ($data.processObject && $data.processObject.length) {\r\n    var process = $data.processObject[0];\r\n    return process.id;\r\n}",
+      "exposed" : false
+    },
+    "processName" : {
+      "type" : "expression",
+      "value" : "if ($data.processObject && $data.processObject.length) {\r\n    var process = $data.processObject[0];\r\n    return process.name;\r\n}",
+      "exposed" : false
+    },
+    "processVersion" : {
+      "type" : "expression",
+      "value" : "if ($data.processObject && $data.processObject.length) {\r\n    var process = $data.processObject[0];\r\n    return process.version;\r\n}",
+      "exposed" : false
+    },
+    "getProcessStartURL" : {
+      "type" : "expression",
+      "value" : "if ($data.processObject && $data.processObject.length) {\n    var process = $data.processObject[0];\n    return \"/bonita/portal/resource/process/\"+ encodeURI(process.name) +\"/\" + process.version + \"/content/?id=\" + process.id +\"&senderUrl=\"+ window.top.location.href;\n}",
+      "exposed" : false
+    },
+    "getTaskURL" : {
+      "type" : "expression",
+      "value" : "if($data.selectedRow && $data.userTasks){\r\n    for(var i=0;i < $data.userTasks.length; i++){\r\n        console.log(\"ping \"+$data.selectedRow.id);\r\n        if($data.selectedRow.id == $data.userTasks[i].rootCaseId){\r\n            \r\n            var url = \"/bonita/portal/form/taskInstance/\"+ $data.userTasks[i].id;\r\n            console.log(\"URL: \", url);\r\n            \r\n            return url;\r\n        }\r\n    }\r\n}",
+      "exposed" : false
+    },
+    "session" : {
+      "type" : "url",
+      "value" : "../API/system/session/unusedid",
+      "exposed" : false
+    },
+    "userTasks" : {
+      "type" : "url",
+      "value" : "../API/bpm/humanTask?c=100&p=0&f=state=ready&f=user_id={{session.user_id}}",
+      "exposed" : false
+    },
+    "output" : {
+      "type" : "expression",
+      "value" : "return JSON.stringify($data.userTasks);",
+      "exposed" : false
+    },
+    "group" : {
+      "type" : "expression",
+      "value" : "return \"acme\";",
+      "exposed" : false
+    },
+    "from" : {
+      "type" : "expression",
+      "value" : "return 1;",
+      "exposed" : false
+    },
+    "to" : {
+      "type" : "expression",
+      "value" : "return 3;",
+      "exposed" : false
+    }
+  },
+  "uuid" : "50efa93a-35fd-4668-a94d-b864380ce64f",
+  "type" : "page"
+}

@@ -1,0 +1,169 @@
+{
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.4.34",
+  "id" : "3d2edb47-082b-4724-a9de-b710dbb0e7cf",
+  "name" : "TaskListAll",
+  "lastUpdate" : 1528310436086,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "headers" : {
+        "type" : "constant",
+        "value" : [ "Name", "State", "Assigned to" ]
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Variable"
+      },
+      "apiUrl" : {
+        "type" : "constant",
+        "value" : "../API/"
+      },
+      "params" : {
+        "type" : "constant"
+      },
+      "content" : {
+        "type" : "expression",
+        "value" : "tasks"
+      },
+      "columnsKey" : {
+        "type" : "constant",
+        "value" : [ "displayName", "state", "assigned_id" ]
+      },
+      "sortColumns" : {
+        "type" : "constant"
+      },
+      "selectedRow" : {
+        "type" : "variable"
+      },
+      "pageSize" : {
+        "type" : "constant",
+        "value" : 20
+      },
+      "filter" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "17333665-b98e-421d-bca3-cf75e705cca3",
+    "id" : "pbDataTable"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "readOnly" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "required" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "minLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "maxLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "Default label"
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
+      },
+      "value" : {
+        "type" : "variable",
+        "value" : "peopleString"
+      }
+    },
+    "reference" : "a54a1cb2-9b40-4a11-ab13-f1ab95691715",
+    "id" : "pbTextarea"
+  } ] ],
+  "assets" : [ {
+    "id" : "1017c37b-6351-461d-9e19-218395a12688",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "5894675f-9b7b-42c3-b4ed-f715114cb47a",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "16ebfe43-ab7a-435e-b1e9-7b407c939b7f",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "tasks" : {
+      "type" : "url",
+      "value" : "../API/bpm/task?c=1000&p=0",
+      "exposed" : false
+    },
+    "taskList" : {
+      "type" : "expression",
+      "value" : "return JSON.stringify($data.tasks);",
+      "exposed" : false
+    },
+    "people" : {
+      "type" : "url",
+      "value" : "../API/identity/user?p=0&c=10000",
+      "exposed" : false
+    },
+    "peopleString" : {
+      "type" : "expression",
+      "value" : "return JSON.stringify($data.peopleMap);",
+      "exposed" : false
+    },
+    "peopleMap" : {
+      "type" : "expression",
+      "value" : "var map = [];\n\nfor (var i=0; i < $data.people.length; i++) {\n    \n    //console.log(\"id is \"+ $data.people[i].id);\n    var nameo = $data.people[i].firstname + \" \" + $data.people[i].lastname;\n    var idt = $data.people[i].id;\n    var obj = { \"id\" : idt,\n        \"name\" : nameo\n    };\n    map.push(obj);\n    \n}\n\n\nfor (var x=0; x < $data.tasks.length; x++){\n    \n    for(var y=0; y < map.length; y++){\n        if(map[y].id == $data.tasks[x].assigned_id ){\n            $data.tasks[x].assigned_id = map[y].name;\n            console.log(\"name - \"+map[y].name);\n        }    \n    }\n    \n}\nreturn map;",
+      "exposed" : false
+    }
+  },
+  "uuid" : "3d2edb47-082b-4724-a9de-b710dbb0e7cf",
+  "type" : "page"
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ASCII"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="email" version="1.0.0" name="mailConfiguration" modelVersion="7.6.0-002">
+  <parameters key="smtpHost">
+    <expression xsi:type="expression:Expression" name="mailHost" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="mailHost" value="" typeClassname="java.lang.String" description=""/>
+    </expression>
+  </parameters>
+  <parameters key="smtpPort">
+    <expression xsi:type="expression:Expression" name="mailPort" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" type="TYPE_PARAMETER" returnType="java.lang.Integer" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="mailPort" value="" typeClassname="java.lang.Integer" description=""/>
+    </expression>
+  </parameters>
+  <parameters key="sslSupport">
+    <expression xsi:type="expression:Expression" name="true" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="starttlsSupport">
+    <expression xsi:type="expression:Expression" name="false" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="userName">
+    <expression xsi:type="expression:Expression" name="mailUsername" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="mailUsername" value="" typeClassname="java.lang.String" description=""/>
+    </expression>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="mailPassword" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="mailPassword" value="" typeClassname="java.lang.String" description=""/>
+    </expression>
+  </parameters>
+  <parameters key="from">
+    <expression xsi:type="expression:Expression" name="mailUsername" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="mailUsername" value="" typeClassname="java.lang.String" description=""/>
+    </expression>
+  </parameters>
+  <parameters key="to">
+    <expression xsi:type="expression:Expression" name="mail" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+      <referencedElements xsi:type="process:JavaObjectData" name="person" transient="true" datasourceId="IN_MEMORY" className="org.bonitasoft.onboarding.Person">
+        <dataType xsi:type="process:JavaType" href="platform:/resource/Onboarding/diagrams/Onboarding-6.0.proc#_wQqIKWxcEeKbYv3tkUdwCw"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="bcc">
+    <expression xsi:type="expression:Expression" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="cc">
+    <expression xsi:type="expression:Expression" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="subject">
+    <expression xsi:type="expression:Expression" name="subject" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+      <referencedElements xsi:type="process:JavaObjectData" name="person" transient="true" datasourceId="IN_MEMORY" className="org.bonitasoft.onboarding.Person">
+        <dataType xsi:type="process:JavaType" href="platform:/resource/Onboarding/diagrams/Onboarding-6.0.proc#_wQqIKWxcEeKbYv3tkUdwCw"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="html">
+    <expression xsi:type="expression:Expression" name="true" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="message">
+    <expression xsi:type="expression:Expression" name="&lt;pattern-expression>" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" type="TYPE_PATTERN" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="employeeWelcomeMailContent" transient="true" datasourceId="IN_MEMORY">
+        <dataType xsi:type="process:StringType" href="platform:/resource/Onboarding/diagrams/Onboarding-6.0.proc#_wQqIJmxcEeKbYv3tkUdwCw"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="headers">
+    <expression xsi:type="expression:TableExpression"/>
+  </parameters>
+  <parameters key="charset">
+    <expression xsi:type="expression:Expression" name="UTF-8" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="replyTo">
+    <expression xsi:type="expression:Expression" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>${${${employeeWelcomeMailContent}}}&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="attachments">
+    <expression xsi:type="expression:ListExpression"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

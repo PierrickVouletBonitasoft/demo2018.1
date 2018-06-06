@@ -1,0 +1,95 @@
+{
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.4.34",
+  "id" : "e2ed8e03-6e81-4a66-8b2f-c9d125a46360",
+  "name" : "HotelRequestStart",
+  "lastUpdate" : 1528310443205,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Create a new hotel request"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "process"
+      },
+      "targetUrl" : {
+        "type" : "constant",
+        "value" : "http://"
+      },
+      "pageToken" : {
+        "type" : "constant"
+      },
+      "processName" : {
+        "type" : "constant",
+        "value" : "Hotel request"
+      },
+      "processVersion" : {
+        "type" : "constant",
+        "value" : "1.0"
+      },
+      "taskId" : {
+        "type" : "constant"
+      },
+      "caseId" : {
+        "type" : "constant"
+      },
+      "target" : {
+        "type" : "constant",
+        "value" : "_self"
+      },
+      "appToken" : {
+        "type" : "constant"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "primary"
+      }
+    },
+    "reference" : "0cf7e34b-c362-47e5-a807-f84efac48efc",
+    "id" : "pbLink"
+  } ] ],
+  "assets" : [ {
+    "id" : "20f6905d-bd4a-4708-a26a-e907ad131567",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "a692b582-1214-4f12-9f73-1da798060ab1",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "81704039-9518-4eda-8c8f-bf9280075f00",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : { },
+  "uuid" : "e2ed8e03-6e81-4a66-8b2f-c9d125a46360",
+  "type" : "page"
+}

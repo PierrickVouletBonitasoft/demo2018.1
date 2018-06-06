@@ -1,0 +1,263 @@
+{
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.5.7",
+  "id" : "30493a97-4653-4adf-af4b-6291553bc4d7",
+  "name" : "LoanCreationPage",
+  "lastUpdate" : 1528313314305,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Start a new loan"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "URL"
+      },
+      "targetUrl" : {
+        "type" : "expression",
+        "value" : "getLoanURL"
+      },
+      "pageToken" : {
+        "type" : "constant"
+      },
+      "processName" : {
+        "type" : "constant"
+      },
+      "processVersion" : {
+        "type" : "constant"
+      },
+      "taskId" : {
+        "type" : "constant"
+      },
+      "caseId" : {
+        "type" : "constant"
+      },
+      "target" : {
+        "type" : "constant",
+        "value" : "_self"
+      },
+      "appToken" : {
+        "type" : "constant"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "success"
+      },
+      "urlParams" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "2812ff29-cf7c-4cb3-a032-238ae3f0e348",
+    "id" : "pbLink"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Open cases"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 4"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "0049cb26-4688-4ad4-9faf-35de2d1be914",
+    "id" : "pbTitle"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "headers" : {
+        "type" : "constant",
+        "value" : [ "Loan amount", "Approver" ]
+      },
+      "content" : {
+        "type" : "expression",
+        "value" : "caseData"
+      },
+      "columnsKey" : {
+        "type" : "constant",
+        "value" : [ "amount", "approver" ]
+      },
+      "selectedRow" : {
+        "type" : "variable",
+        "value" : "selectedRow"
+      }
+    },
+    "reference" : "55fee454-3d7d-4090-adb8-bea03f6a02aa",
+    "id" : "pbTable"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "url" : {
+        "type" : "expression",
+        "value" : "getTaskUrl"
+      },
+      "style" : {
+        "type" : "constant",
+        "value" : "width:100%; border: 0px solid; min-height: 900px;"
+      }
+    },
+    "reference" : "2e56e100-7f88-4675-b9bd-68f68ee295f1",
+    "id" : "customIFrameV703"
+  } ] ],
+  "assets" : [ {
+    "id" : "1a4fc0c0-b98b-4ff3-84e2-cb8fbc4f04d0",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "cc16b10b-92a7-4d39-ad05-f1866977967e",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "59a1d477-364d-448d-ab9e-7fa6621ffed5",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "getLoanProcess" : {
+      "type" : "url",
+      "value" : "../API/bpm/process?c=1&p=0&f=name=Initial%20approval&o=deploymentDate",
+      "exposed" : false
+    },
+    "getLoanURL" : {
+      "type" : "expression",
+      "value" : "if ($data.getLoanProcess && $data.getLoanProcess.length) {\n    var process = $data.getLoanProcess[0];\n    console.log(\"process is \"+ process.name);\n    return \"/bonita/portal/resource/process/\"+ encodeURI(process.name) +\"/\" + process.version + \"/content/?id=\" + process.id +\"&senderUrl=\"+ window.top.location.href;\n}",
+      "exposed" : false
+    },
+    "getLoanInstances" : {
+      "type" : "url",
+      "value" : "../API/bpm/case?&f=name=Initial%20approval",
+      "exposed" : false
+    },
+    "stringified" : {
+      "type" : "expression",
+      "value" : "return $data.getLoanInstances[0].rootCaseId;",
+      "exposed" : false
+    },
+    "getData" : {
+      "type" : "url",
+      "value" : "../API/bpm/caseVariable/{{stringified}}/loanAmt",
+      "exposed" : false
+    },
+    "caseData" : {
+      "type" : "expression",
+      "value" : "var caseTable = [];\n\ncaseTable.push({\"amount\":$data.getData.value, \"approver\":$data.getApprover.value});\n\nreturn caseTable;",
+      "exposed" : false
+    },
+    "caseTable" : {
+      "type" : "json",
+      "value" : "[]",
+      "exposed" : false
+    },
+    "getLoanAmount" : {
+      "type" : "url",
+      "value" : "../API/bpm/caseVariable/{{stringified}}/loanAmt",
+      "exposed" : false
+    },
+    "getApprover" : {
+      "type" : "url",
+      "value" : "../API/bpm/caseVariable/{{stringified}}/pathToTake",
+      "exposed" : false
+    },
+    "session" : {
+      "type" : "url",
+      "value" : "../API/system/session/unusedid",
+      "exposed" : false
+    },
+    "userTasks" : {
+      "type" : "url",
+      "value" : "../API/bpm/humanTask?c=100&p=0&f=state=ready&f=user_id={{session.user_id}}",
+      "exposed" : false
+    },
+    "getTaskUrl" : {
+      "type" : "expression",
+      "value" : "if($data.selectedRow != \"{}\" && $data.userTasks){\n    var url = \"/bonita/portal/form/taskInstance/\"+ $data.userTasks[0].id;\n    return url;\n}",
+      "exposed" : false
+    },
+    "selectedRow" : {
+      "type" : "json",
+      "value" : "{}",
+      "exposed" : false
+    },
+    "stringer" : {
+      "type" : "expression",
+      "value" : "return JSON.stringify($data.userTasks);",
+      "exposed" : false
+    }
+  },
+  "uuid" : "30493a97-4653-4adf-af4b-6291553bc4d7",
+  "type" : "page"
+}

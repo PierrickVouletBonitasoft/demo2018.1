@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>FTPDownload</id>
+  <version>1.0.0</version>
+  <category id="File"/>
+  <input defaultValue="localhost" mandatory="true" name="ftpserver" type="java.lang.String"/>
+  <input defaultValue="21" mandatory="true" name="port" type="java.lang.Integer"/>
+  <input defaultValue="anonymous" mandatory="false" name="username" type="java.lang.String"/>
+  <input mandatory="false" name="password" type="java.lang.String"/>
+  <input mandatory="true" name="filename" type="java.lang.String"/>
+  <input defaultValue="ASCII" mandatory="true" name="fileType" type="java.lang.String"/>
+  <input mandatory="true" name="attachToDoc" type="java.lang.String"/>
+  <input name="description" type="java.lang.String"/>
+  <page id="FTPinputs">
+    <widget xsi:type="definition:Text" id="server" inputName="ftpserver"/>
+    <widget xsi:type="definition:Text" id="port" inputName="port"/>
+    <widget xsi:type="definition:Text" id="username" inputName="username"/>
+    <widget xsi:type="definition:Password" id="password" inputName="password"/>
+    <widget xsi:type="definition:Text" id="filename" inputName="filename"/>
+    <widget xsi:type="definition:Text" id="fileType" inputName="fileType"/>
+    <widget xsi:type="definition:Text" id="attachToDocument" inputName="attachToDoc"/>
+    <widget xsi:type="definition:TextArea" id="description" inputName="description"/>
+  </page>
+</definition:ConnectorDefinition>

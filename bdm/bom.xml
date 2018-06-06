@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel modelVersion="1.0" productVersion="7.4.1">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.OBDDepartment">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.OBDJobPosition">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="departmentId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="jobPosition" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.OBDEmployee">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="personId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="bonitaUserId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="workspaceLocation" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="jobPosition" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="department" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="hiringManager" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="fixedSalary" nullable="false" collection="false"/>
+                <field type="DATE" length="255" name="startDate" nullable="false" collection="false"/>
+                <field type="DATE" length="255" name="firstPaymentDate" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="positionId" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="variableSalary" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="homeOffice" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="contractType" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="benefits" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="isWorkspaceNeeded" nullable="true" collection="false"/>
+                <field type="DATE" length="255" name="onBoardingComplete" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="workspaceComments" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="loginId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="workEmail" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="status" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="getEmployees" content="SELECT e &#xA;FROM OBDEmployee e&#xD;&#xA;ORDER by e.id&#xA;&#xA;" returnType="java.util.List">
+                    <queryParameters/>
+                </query>
+                <query name="getHomeOfficeData" content="Select e.homeOffice, Count(*) &#xD;&#xA;From OBDEmployee e &#xD;&#xA;Group by e.homeOffice &#xD;&#xA;Order by e.homeOffice" returnType="java.util.List">
+                    <queryParameters/>
+                </query>
+            </queries>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.OBDHardwareItemAllocation">
+            <fields>
+                <field type="LONG" length="255" name="itemId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="employeeId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="assetId" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.OBDHardwareItemDefinition">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="label" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.OBDSoftwareItemAllocation">
+            <fields>
+                <field type="LONG" length="255" name="itemId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="employeeId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="license" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.OBDSoftwareItemDefinition">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="label" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.OBDPerson">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="firstName" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="lastName" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="address" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="city" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="zipCode" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="phone" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="workPhone" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="gender" nullable="false" collection="false"/>
+                <field type="DATE" length="255" name="dateOfBirth" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="professionalMail" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="getPersonData" content="SELECT o &#xA;FROM OBDPerson o &#xD;&#xA;ORDER by o.id&#xA;" returnType="java.util.List">
+                    <queryParameters/>
+                </query>
+            </queries>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.OBDITReqts">
+            <fields>
+                <relationField type="COMPOSITION" reference="com.company.model.OBDITLineItem1" fetchType="EAGER" name="hwReqts" nullable="true" collection="true"/>
+                <relationField type="COMPOSITION" reference="com.company.model.OBDITLineItem" fetchType="EAGER" name="swReqts" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="hwComments" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="swComments" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.OBDITLineItem">
+            <fields>
+                <field type="STRING" length="255" name="reqt" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="licKey" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.OBDITLineItem1">
+            <fields>
+                <field type="STRING" length="255" name="reqt" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="assetId" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.HotelRequest">
+            <fields>
+                <field type="DATE" length="255" name="arrivalDate" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="numberOfNights" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="destination" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="approval" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="reason" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.DataRequest">
+            <fields>
+                <field type="STRING" length="255" name="requestor" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="requestorEmail" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="query" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="approve" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="assignTo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="emailTo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.DensoObject">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

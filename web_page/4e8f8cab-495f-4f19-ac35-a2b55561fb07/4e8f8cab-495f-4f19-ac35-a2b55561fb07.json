@@ -1,0 +1,582 @@
+{
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.4.26",
+  "id" : "4e8f8cab-495f-4f19-ac35-a2b55561fb07",
+  "name" : "composeIntroEmails",
+  "lastUpdate" : 1528310436740,
+  "rows" : [ [ {
+    "type" : "formContainer",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      }
+    },
+    "reference" : "90f17985-f00d-46fe-a037-139927a5a3ac",
+    "id" : "pbFormContainer",
+    "container" : {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : { },
+      "reference" : "3a161001-4d67-4f4e-82c7-85ca2bee58b2",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Email to new hire"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "newHireEmailTemplate"
+          },
+          "toolbarsGrp1" : {
+            "type" : "constant",
+            "value" : [ "h1", "h2", "h3", "h4", "h5", "h6", "p", "ul", "ol" ]
+          },
+          "toolbarsGrp2" : {
+            "type" : "constant",
+            "value" : [ "bold", "italics", "underline", "strikeThrough", "pre", "quote" ]
+          },
+          "toolbarsGrp3" : {
+            "type" : "constant",
+            "value" : [ "justifyLeft", "justifyCenter", "justifyRight", "indent", "outdent" ]
+          },
+          "toolbarsGrp4" : {
+            "type" : "constant",
+            "value" : [ "html", "insertImage", "insertLink", "insertVideo", "wordcount", "charcount", "undo", "redo", "clear" ]
+          }
+        },
+        "reference" : "5af82725-d87b-44dd-9f8e-8cbabbec903b",
+        "id" : "pbRichTextarea"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbInput"
+          },
+          "isDisplayed" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 1
+          },
+          "label" : {
+            "type" : "constant",
+            "value" : "Email address of team(s)"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "text"
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "readonly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "placeholder" : {
+            "type" : "constant"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "formInput.emailAddress"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "min" : {
+            "type" : "constant"
+          },
+          "max" : {
+            "type" : "constant"
+          },
+          "step" : {
+            "type" : "constant",
+            "value" : 1
+          }
+        },
+        "reference" : "67a3d80d-5d05-47ae-a5dc-f3027e634fe2",
+        "id" : "pbInput"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Email to team"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "emailTemplate"
+          },
+          "toolbarsGrp1" : {
+            "type" : "constant",
+            "value" : [ "h1", "h2", "h3", "h4", "h5", "h6", "p", "ul", "ol" ]
+          },
+          "toolbarsGrp2" : {
+            "type" : "constant",
+            "value" : [ "bold", "italics", "underline", "strikeThrough", "pre", "quote" ]
+          },
+          "toolbarsGrp3" : {
+            "type" : "constant",
+            "value" : [ "justifyLeft", "justifyCenter", "justifyRight", "indent", "outdent" ]
+          },
+          "toolbarsGrp4" : {
+            "type" : "constant",
+            "value" : [ "html", "insertImage", "insertLink", "insertVideo", "wordcount", "charcount", "undo", "redo", "clear" ]
+          }
+        },
+        "reference" : "d1e8e42b-9a19-41d2-98a9-62112d0fba1e",
+        "id" : "pbRichTextarea"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "removeItem" : {
+            "type" : "variable"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbButton"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "isDisplayed" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "constant",
+            "value" : "Submit"
+          },
+          "dataToSend" : {
+            "type" : "expression",
+            "value" : "formOutput"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "readonly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "collectionPosition" : {
+            "type" : "constant"
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation",
+            "value" : "/bonita/apps/hrmgmt/overview/"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Submit task"
+          },
+          "collectionToModify" : {
+            "type" : "variable"
+          },
+          "valueToAdd" : {
+            "type" : "expression"
+          },
+          "disabled" : {
+            "type" : "expression",
+            "value" : "$form.$invalid"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.ButtonWidget"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "dataFromSuccess" : {
+            "type" : "variable"
+          },
+          "dataFromError" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "af2e1b0b-cb61-4f2f-8b3c-387ba0cb7c27",
+        "id" : "pbButton"
+      } ] ]
+    }
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : { },
+    "reference" : "eb759031-1394-4074-8a07-2944bffd2db4",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "md" : 12,
+        "sm" : 12,
+        "xs" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "readonly" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 1"
+        },
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "widgetId" : {
+          "type" : "constant",
+          "value" : "pbTitle"
+        },
+        "isDisplayed" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "label" : {
+          "type" : "constant"
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "{{ task.displayName }}"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "center"
+        },
+        "class" : {
+          "type" : "constant",
+          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TitleWidget"
+        },
+        "dimension" : {
+          "type" : "constant",
+          "value" : 12
+        }
+      },
+      "reference" : "19c6c818-6ce4-4267-985d-7cdf54148cc5",
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "md" : 12,
+        "sm" : 12,
+        "xs" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "readonly" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "widgetId" : {
+          "type" : "constant",
+          "value" : "pbText"
+        },
+        "isDisplayed" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "label" : {
+          "type" : "constant"
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "{{ task.displayDescription }}"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "class" : {
+          "type" : "constant",
+          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+        },
+        "dimension" : {
+          "type" : "constant",
+          "value" : 12
+        },
+        "allowHTML" : {
+          "type" : "constant",
+          "value" : true
+        }
+      },
+      "reference" : "508cc4fd-84c6-46c2-bdd1-d68a6ea1787d",
+      "id" : "pbText"
+    } ] ]
+  } ] ],
+  "assets" : [ {
+    "id" : "4fcdc7bc-3f66-4d36-9734-7ccd34c7f954",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "51e11a17-08b9-491e-b07d-1e143293bb42",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "c70dfb49-3c91-4a26-8bcf-320cae4ac8ac",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "task" : {
+      "type" : "url",
+      "value" : "../API/bpm/userTask/{{taskId}}",
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "expression",
+      "value" : "return {\n};",
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : "return {\n\t'emailToNewHire': $data.newHireEmailTemplate,\n\t'emailToTeam': $data.emailTemplate,\n\t'emailAddress': $data.formInput.emailAddress\n};",
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : "../API/bpm/userTask/{{taskId}}/context",
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : "id",
+      "exposed" : false
+    },
+    "emailTemplate" : {
+      "type" : "expression",
+      "value" : "var emailStarterTemplate = \"\";\n\nemailStarterTemplate += \"<p>Hi all, <br>It gives me great pleasure to announce that we have a new member joining our organization today. \";\nemailStarterTemplate += \"Please join me in welcoming <b>\"+$data.person.firstName+\" \"+$data.person.lastName+\"</b>, who will be part of <b>\"+$data.employee.department+\"</b> as <b>\"+$data.employee.jobPosition+\"</b>. \";\nemailStarterTemplate += $data.person.firstName+\" will based out of \"+$data.employee.homeOffice+\", so please introduce yourselves.\";\nemailStarterTemplate += \"<br><br>Best Regards,<br><br><br>\"+$data.authorName;\n\nreturn emailStarterTemplate;",
+      "exposed" : false
+    },
+    "sample" : {
+      "type" : "expression",
+      "value" : "return {\n    'formInput': {\n        \"emailToNewHire\" : \"\",\n        \"emailToTeam\" : $data.emailTemplate,\n        \"emailAddress\" : \"\"\n    }\n};",
+      "exposed" : false
+    },
+    "person" : {
+      "type" : "url",
+      "value" : "../{{context.newPerson_ref.link}}",
+      "exposed" : false
+    },
+    "employee" : {
+      "type" : "url",
+      "value" : "../{{context.newEmployee_ref.link}}",
+      "exposed" : false
+    },
+    "authorId" : {
+      "type" : "expression",
+      "value" : "return $data.context.identity_ref.author;",
+      "exposed" : false
+    },
+    "authorName" : {
+      "type" : "expression",
+      "value" : "var first =  $data.authorObject.firstname;\nvar last = $data.authorObject.lastname;\n\nreturn first + \" \" + last;",
+      "exposed" : false
+    },
+    "authorObject" : {
+      "type" : "url",
+      "value" : "../API/identity/user/{{authorId}}",
+      "exposed" : false
+    },
+    "newHireEmailTemplate" : {
+      "type" : "expression",
+      "value" : "var template = \"\";\n\ntemplate += \"<p>Welcome aboard and we hope an HR representative has reached out to you.\";\ntemplate += \"<br>Attached with this email is a <b>'Getting Started'</b> kit and some useful links to help familiarize you with the organization,\";\ntemplate += \"<br>who is who, policies and some important documents to help you understand the position and to get you more comfortable.\";\n\ntemplate += \"<br><br><a href=\\\"http://www.bonitasoft.com\\\">bonitasoft.com</a>\";\ntemplate += \"<br><br><a href=\\\"http://www.bonitasoft.com/about-us/leadership\\\">Who we are</a>\";\ntemplate += \"<br><br>Please let me know if you need any assistance\";\n  \n\nreturn template;",
+      "exposed" : false
+    },
+    "whatIsInEmployee" : {
+      "type" : "expression",
+      "value" : "return JSON.stringify($data.employee);",
+      "exposed" : false
+    }
+  },
+  "uuid" : "4e8f8cab-495f-4f19-ac35-a2b55561fb07",
+  "type" : "form"
+}

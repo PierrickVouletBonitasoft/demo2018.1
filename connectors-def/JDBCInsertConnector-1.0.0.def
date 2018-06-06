@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>JDBCInsertConnector</id>
+  <version>1.0.0</version>
+  <category icon="database.png" id="database"/>
+  <input mandatory="true" name="driver" type="java.lang.String"/>
+  <input mandatory="true" name="url" type="java.lang.String"/>
+  <input mandatory="true" name="username" type="java.lang.String"/>
+  <input name="password" type="java.lang.String"/>
+  <input mandatory="true" name="script" type="java.lang.String"/>
+  <output name="id" type="java.lang.Long"/>
+  <page id="connectorConfigurationPage">
+    <widget xsi:type="definition:Text" id="Driver" inputName="driver"/>
+    <widget xsi:type="definition:Text" id="Url" inputName="url"/>
+    <widget xsi:type="definition:Text" id="Username" inputName="username"/>
+    <widget xsi:type="definition:Text" id="Password" inputName="password"/>
+    <widget xsi:type="definition:ScriptEditor" id="script" inputName="script"/>
+  </page>
+</definition:ConnectorDefinition>

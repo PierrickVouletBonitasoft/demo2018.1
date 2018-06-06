@@ -1,0 +1,92 @@
+{
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.4.34",
+  "id" : "6d2d1f82-7a12-4e4f-a64a-7b3742ca146d",
+  "name" : "HotelRequestLayout",
+  "lastUpdate" : 1528310438488,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "value" : {
+        "type" : "constant",
+        "value" : "Logout"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "right"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "primary"
+      }
+    },
+    "reference" : "a8a57525-db6b-4f0b-b148-163ab92a24fc",
+    "id" : "customSessionWidget"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "src" : {
+        "type" : "expression",
+        "value" : "targetedPageUrl"
+      }
+    },
+    "reference" : "1198a79c-dacd-4d4e-b9c5-8b61882e1e74",
+    "id" : "customLivingApplicationIFrame"
+  } ] ],
+  "assets" : [ {
+    "id" : "709bee41-aba8-4c90-88ae-c3e21ac240c5",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "e8bdb4ef-ef7d-4e86-a5e6-80e4ea6a8989",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "98e0365a-4c11-4e1d-ba67-bb8bb6dfaefc",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "targetedPageUrl" : {
+      "type" : "constant",
+      "exposed" : false
+    }
+  },
+  "uuid" : "6d2d1f82-7a12-4e4f-a64a-7b3742ca146d",
+  "type" : "layout"
+}

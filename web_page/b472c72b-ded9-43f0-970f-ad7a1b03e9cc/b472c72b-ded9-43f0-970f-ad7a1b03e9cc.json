@@ -1,0 +1,287 @@
+{
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.4.34",
+  "id" : "b472c72b-ded9-43f0-970f-ad7a1b03e9cc",
+  "name" : "QueryReport",
+  "lastUpdate" : 1528310441458,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 4,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Queries by requestor"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 2"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "center"
+      }
+    },
+    "reference" : "bb65631d-f013-4c27-9bbc-727b1cfb31fe",
+    "id" : "pbTitle"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 4,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Queries by approval"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 2"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "center"
+      }
+    },
+    "reference" : "4a43ed0b-3ffb-48e9-98db-a85ed163a50d",
+    "id" : "pbTitle"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 4,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Queries by associate"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 2"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "a9ff03a7-8076-48bb-9623-06cdb71b31d5",
+    "id" : "pbTitle"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 4,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Pie"
+      },
+      "data" : {
+        "type" : "expression",
+        "value" : "getRequestorData.data"
+      },
+      "labels" : {
+        "type" : "expression",
+        "value" : "getRequestorData.labels"
+      },
+      "setLabels" : {
+        "type" : "constant",
+        "value" : [ "Default set label" ]
+      },
+      "legendHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "colors" : {
+        "type" : "constant",
+        "value" : [ ]
+      },
+      "options" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "89287524-dfb6-4a70-9f0d-91a761d03ae5",
+    "id" : "pbChart"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 4,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Pie"
+      },
+      "data" : {
+        "type" : "expression",
+        "value" : "getApprovalData.data"
+      },
+      "labels" : {
+        "type" : "expression",
+        "value" : "getApprovalData.labels"
+      },
+      "setLabels" : {
+        "type" : "constant",
+        "value" : [ "Default set label" ]
+      },
+      "legendHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "colors" : {
+        "type" : "constant"
+      },
+      "options" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "19760fb4-08d1-4114-b2c7-bc1787495215",
+    "id" : "pbChart"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 4,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Pie"
+      },
+      "data" : {
+        "type" : "expression",
+        "value" : "getAssociateData.data"
+      },
+      "labels" : {
+        "type" : "expression",
+        "value" : "getAssociateData.labels"
+      },
+      "setLabels" : {
+        "type" : "constant",
+        "value" : [ "Default set label" ]
+      },
+      "legendHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "colors" : {
+        "type" : "constant"
+      },
+      "options" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "ef5134d6-2eb2-43c0-aeb1-45bd0239cd52",
+    "id" : "pbChart"
+  } ] ],
+  "assets" : [ {
+    "id" : "7bc55c93-a5f8-405a-9760-97fbbab72427",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "bcbff09a-c206-4a2b-af2c-c553d0ef70eb",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "ebc17718-6c6a-44f1-9f27-a4e68771f14f",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "requestData" : {
+      "type" : "url",
+      "value" : "../API/bdm/businessData/com.company.model.DataRequest?q=find&p=0&c=0",
+      "exposed" : false
+    },
+    "getRequestorData" : {
+      "type" : "expression",
+      "value" : "var dataMap = {};\n\nfor(var i=0; i < $data.requestData.length; i++){\n    if($data.requestData[i].requestor in dataMap){\n        var oldCount = dataMap[$data.requestData[i].requestor];\n        dataMap[$data.requestData[i].requestor] = oldCount + 1;\n    } else {\n        dataMap[$data.requestData[i].requestor] = 1;\n    }\n}\n\nvar chartData = {\"labels\":[],\n                 \"data\":[]\n                }\n\nObject.keys(dataMap).forEach(function(key) {\n    chartData.labels.push(key);\n    chartData.data.push(dataMap[key]);\n});\n\nreturn chartData;",
+      "exposed" : false
+    },
+    "getApprovalData" : {
+      "type" : "expression",
+      "value" : "var dataMap = {};\n\nfor(var i=0; i < $data.requestData.length; i++){\n    if($data.requestData[i].requestor in dataMap){\n        var oldCount = dataMap[$data.requestData[i].approve];\n        dataMap[$data.requestData[i].approve] = oldCount + 1;\n    } else {\n        dataMap[$data.requestData[i].approve] = 1;\n    }\n}\n\nvar chartData = {\"labels\":[],\n                 \"data\":[]\n                }\n\nObject.keys(dataMap).forEach(function(key) {\n    chartData.labels.push(key);\n    chartData.data.push(dataMap[key]);\n});\n\nreturn chartData;",
+      "exposed" : false
+    },
+    "getAssociateData" : {
+      "type" : "expression",
+      "value" : "var dataMap = {};\n\nfor(var i=0; i < $data.requestData.length; i++){\n    if($data.requestData[i].assignTo in dataMap){\n        var oldCount = dataMap[$data.requestData[i].assignTo];\n        dataMap[$data.requestData[i].assignTo] = oldCount + 1;\n    } else {\n        dataMap[$data.requestData[i].assignTo] = 1;\n    }\n}\n\nvar chartData = {\"labels\":[],\n                 \"data\":[]\n                }\n\nObject.keys(dataMap).forEach(function(key) {\n    chartData.labels.push(key);\n    chartData.data.push(dataMap[key]);\n});\n\nreturn chartData;",
+      "exposed" : false
+    }
+  },
+  "uuid" : "b472c72b-ded9-43f0-970f-ad7a1b03e9cc",
+  "type" : "page"
+}

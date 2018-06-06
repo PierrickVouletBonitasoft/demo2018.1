@@ -1,0 +1,83 @@
+{
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.4.26",
+  "id" : "48aeaf44-10e4-4247-9f09-0f16af7251d5",
+  "name" : "test",
+  "lastUpdate" : 1528310436514,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "latitude" : {
+        "type" : "variable",
+        "value" : "lat"
+      },
+      "longitude" : {
+        "type" : "variable",
+        "value" : "long"
+      }
+    },
+    "reference" : "c679624f-847f-4af6-9dae-b86565fe3137",
+    "id" : "customGeolocation"
+  } ] ],
+  "assets" : [ {
+    "id" : "3c21fc79-ec0c-4934-a707-675ab5998bf1",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "2c18a09f-e7be-4d53-8983-d1e2ae962078",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "b96062fb-fbe5-46e1-b534-6ef2c1b2207a",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "from" : {
+      "type" : "expression",
+      "value" : "return 1;",
+      "exposed" : false
+    },
+    "to" : {
+      "type" : "expression",
+      "value" : "return 2;",
+      "exposed" : false
+    },
+    "group" : {
+      "type" : "expression",
+      "value" : "return \"acme\";",
+      "exposed" : false
+    },
+    "lat" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "long" : {
+      "type" : "constant",
+      "exposed" : false
+    }
+  },
+  "uuid" : "48aeaf44-10e4-4247-9f09-0f16af7251d5",
+  "type" : "page"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="JDBCInsertConnector" version="1.0.0" name="jdbcInsertQueryConfiguration" modelVersion="7.6.0-002">
+  <parameters key="driver">
+    <expression xsi:type="expression:Expression" name="dbDriver" content="dbDriver" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="dbDriver" value="" typeClassname="java.lang.String" description=""/>
+    </expression>
+  </parameters>
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="dbUrl" content="dbUrl" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="dbUrl" value="" typeClassname="java.lang.String" description=""/>
+    </expression>
+  </parameters>
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="dbUsername" content="dbUsername" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="dbUsername" value="" typeClassname="java.lang.String" description=""/>
+    </expression>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="dbPassword" content="dbPassword" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="dbPassword" value="" typeClassname="java.lang.String" description=""/>
+    </expression>
+  </parameters>
+  <parameters key="script">
+    <expression xsi:type="expression:Expression" name="insertQuery" content="import org.apache.commons.lang.StringEscapeUtils;&#xD;&#xA;&#xD;&#xA;return String.format(&quot;INSERT INTO department (name) values ('%s');&quot;, StringEscapeUtils.escapeSql(department));" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="department" transient="true" datasourceId="IN_MEMORY">
+        <dataType xsi:type="process:StringType" href="platform:/resource/Onboarding/diagrams/Onboarding_Setup-6.0.proc#_BPkgVGxdEeKbYv3tkUdwCw"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>
