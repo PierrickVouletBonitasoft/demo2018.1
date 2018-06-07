@@ -4,10 +4,14 @@
         <displayName>My Loan App</displayName>
         <applicationPages>
             <applicationPage customPage="custompage_LoanCreationPage" token="Loan"/>
+            <applicationPage customPage="custompage_SampleChartPage" token="Chart"/>
         </applicationPages>
         <applicationMenus>
             <applicationMenu applicationPage="Loan">
-                <displayName>Loan</displayName>
+                <displayName>Loans</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="Chart">
+                <displayName>Charts</displayName>
             </applicationMenu>
         </applicationMenus>
     </application>

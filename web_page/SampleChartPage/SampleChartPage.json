@@ -2,7 +2,7 @@
   "designerVersion" : "1.7.49",
   "id" : "SampleChartPage",
   "name" : "SampleChartPage",
-  "lastUpdate" : 1528313438561,
+  "lastUpdate" : 1528403064700,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -78,7 +78,7 @@
         },
         "type" : {
           "type" : "constant",
-          "value" : "Pie"
+          "value" : "PolarArea"
         },
         "data" : {
           "type" : "constant",
