@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="myLoanApp" version="1.0" profile="User" homePage="Loan" state="ACTIVATED" layout="custompage_defaultlayout" theme="custompage_bootstrapdefaulttheme">
+        <displayName>My Loan App</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_LoanCreationPage" token="Loan"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="Loan">
+                <displayName>Loan</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

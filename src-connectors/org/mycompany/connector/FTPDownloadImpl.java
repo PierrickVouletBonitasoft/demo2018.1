@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import org.apache.tika.Tika;
- 
+import org.apache.tika.io.IOUtils;
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 
@@ -63,10 +63,12 @@ public class FTPDownloadImpl extends AbstractFTPDownloadImpl {
             // Using InputStream retrieveFileStream(String)
             String remoteFile2 = getFilename();
             InputStream inputStream = ftpClient.retrieveFileStream(remoteFile2);
+                        
+            //byte[] bytes = new byte[inputStream.available()];
+            byte[] bytes = IOUtils.toByteArray(inputStream);
+            //inputStream.read(bytes);
             
-            //logger.info("number of bytes is "+inputStream.available());
-            byte[] bytes = new byte[inputStream.available()];
-            inputStream.read(bytes);
+            //logger.info("number of bytes is "+bytes.length);
             
             Tika tika = new Tika();
             String mimeType = tika.detect(inputStream);

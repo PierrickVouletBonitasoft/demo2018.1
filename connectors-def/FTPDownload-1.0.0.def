@@ -21,4 +21,6 @@
     <widget xsi:type="definition:Text" id="attachToDocument" inputName="attachToDoc"/>
     <widget xsi:type="definition:TextArea" id="description" inputName="description"/>
   </page>
+  <jarDependency>tika-core-1.14.jar</jarDependency>
+  <jarDependency>commons-net-3.6.jar</jarDependency>
 </definition:ConnectorDefinition>

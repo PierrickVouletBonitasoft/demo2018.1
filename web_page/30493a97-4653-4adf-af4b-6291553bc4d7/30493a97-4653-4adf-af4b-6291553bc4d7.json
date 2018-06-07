@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.5.7",
   "id" : "30493a97-4653-4adf-af4b-6291553bc4d7",
   "name" : "LoanCreationPage",
-  "lastUpdate" : 1528313314305,
+  "lastUpdate" : 1528395218613,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -120,7 +120,7 @@
       },
       "headers" : {
         "type" : "constant",
-        "value" : [ "Loan amount", "Approver" ]
+        "value" : [ "Loan amount", "Approver", "Approved", "Stage", "Applicant name", "Loan number" ]
       },
       "content" : {
         "type" : "expression",
@@ -128,7 +128,7 @@
       },
       "columnsKey" : {
         "type" : "constant",
-        "value" : [ "amount", "approver" ]
+        "value" : [ "amount", "approver", "approved", "stage", "name", "loanNumber" ]
       },
       "selectedRow" : {
         "type" : "variable",
@@ -214,7 +214,7 @@
     },
     "caseData" : {
       "type" : "expression",
-      "value" : "var caseTable = [];\n\ncaseTable.push({\"amount\":$data.getData.value, \"approver\":$data.getApprover.value});\n\nreturn caseTable;",
+      "value" : "var caseTable = [];\nif($data.getData !== undefined){\n    caseTable.push({\"amount\":$data.getData.value, \"approver\":$data.getApprover.value, \"approved\":\"Decision pending\", \"stage\":\"In flight\", \"name\":\"Carl MacBain\", \"loanNumber\":\"A5768BW23\"});\n}\ncaseTable.push({\"amount\":650000, \"approver\":\"Manager\", \"approved\": \"No\", \"stage\":\"Complete\", \"name\":\"John Smith\", \"loanNumber\":\"ND48673CW\"});\ncaseTable.push({\"amount\":2000000, \"approver\":\"VP\", \"approved\": \"Yes\", \"stage\":\"Complete\", \"name\":\"Pablo Alvarez\", \"loanNumber\":\"93MGK3958\"});\ncaseTable.push({\"amount\":75800, \"approver\":\"Agent\", \"approved\": \"Yes\", \"stage\":\"Complete\", \"name\":\"Mary Jones\", \"loanNumber\":\"KX60995LV\"});\n\n\nreturn caseTable;",
       "exposed" : false
     },
     "caseTable" : {
