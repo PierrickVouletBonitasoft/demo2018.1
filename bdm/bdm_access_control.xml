@@ -35,6 +35,8 @@
             <attributes businessObjectQualifiedName="com.company.model.LoanApplication">
                 <attribute name="amount"/>
                 <attribute name="approved"/>
+                <attribute name="loanNumber"/>
+                <attribute name="loanType"/>
             </attributes>
         </rule>
     </businessObjectRule>
