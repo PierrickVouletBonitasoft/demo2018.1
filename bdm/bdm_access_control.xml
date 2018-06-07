@@ -25,4 +25,17 @@
         </rule>
     </businessObjectRule>
     <businessObjectRule businessObjectQualifiedName="com.company.model.DensoObject"/>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.LoanApplication">
+        <rule name="myAccessRule" usingDynamicProfiles="false">
+            <condition></condition>
+            <staticProfiles>
+                <profile>User</profile>
+            </staticProfiles>
+            <dynamicProfiles></dynamicProfiles>
+            <attributes businessObjectQualifiedName="com.company.model.LoanApplication">
+                <attribute name="amount"/>
+                <attribute name="approved"/>
+            </attributes>
+        </rule>
+    </businessObjectRule>
 </accessControlModel>

@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.4.34",
   "id" : "3840ed22-5ee4-468d-a40a-255826975d5a",
   "name" : "review",
-  "lastUpdate" : 1528313893231,
+  "lastUpdate" : 1528373547467,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -397,103 +397,6 @@
         },
         "reference" : "8e1375a0-1103-4d1a-8f1f-dbc7a1cd4ce7",
         "id" : "pbButton"
-      } ], [ {
-        "type" : "component",
-        "dimension" : {
-          "xs" : 12,
-          "sm" : 12,
-          "md" : 12,
-          "lg" : 12
-        },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "disabled" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "required" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "labelHidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "label" : {
-            "type" : "interpolation",
-            "value" : "Select a state/prefect/canton (optional)"
-          },
-          "labelPosition" : {
-            "type" : "constant",
-            "value" : "top"
-          },
-          "labelWidth" : {
-            "type" : "constant",
-            "value" : 4
-          },
-          "placeholder" : {
-            "type" : "interpolation",
-            "value" : ""
-          },
-          "availableValues" : {
-            "type" : "expression",
-            "value" : "listOfNames"
-          },
-          "displayedKey" : {
-            "type" : "constant"
-          },
-          "returnedKey" : {
-            "type" : "constant"
-          },
-          "value" : {
-            "type" : "variable"
-          }
-        },
-        "reference" : "aa64b7e5-826b-4e65-99ae-63d255b8dedb",
-        "id" : "pbSelect"
-      } ], [ {
-        "type" : "component",
-        "dimension" : {
-          "xs" : 12,
-          "sm" : 12,
-          "md" : 12,
-          "lg" : 12
-        },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "type" : {
-            "type" : "constant",
-            "value" : "Process document"
-          },
-          "url" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "document" : {
-            "type" : "variable",
-            "value" : "context.loanApp_ref"
-          },
-          "showPreview" : {
-            "type" : "constant",
-            "value" : true
-          }
-        },
-        "reference" : "89baa704-0e61-40c5-ab06-cde18fa5a10b",
-        "id" : "pbFileViewer"
       } ] ]
     }
   } ], [ {
