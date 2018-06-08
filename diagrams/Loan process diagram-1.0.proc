@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_pj-ggD_zEeemFIQjEswWsw" name="Loan process diagram" author="Joe" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED00057400244C6F616E2070726F63657373206469616772616D372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_pj-ggT_zEeemFIQjEswWsw" name="Initial approval" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_pj-ggj_zEeemFIQjEswWsw" name="Employee lane" actor="_pj-h7T_zEeemFIQjEswWsw">
@@ -374,7 +374,7 @@
           <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_pj-hOz_zEeemFIQjEswWsw" name="" content="" returnTypeFixed="true"/>
           <confirmationMessage xmi:type="expression:Expression" xmi:id="_pj-hPD_zEeemFIQjEswWsw" name="" content="" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_pj-hPT_zEeemFIQjEswWsw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_IS4VMGp7EeiCMKwuyweang" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_R17BkGtTEeirf7E1BxcYyg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_pj-hPz_zEeemFIQjEswWsw" name="singleUserCompliance" definitionId="single-user" definitionVersion="1.0.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_pj-hQD_zEeemFIQjEswWsw" definitionId="single-user" version="1.0.0">
@@ -422,7 +422,7 @@
           <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_pj-hXz_zEeemFIQjEswWsw" name="" content="" returnTypeFixed="true"/>
           <confirmationMessage xmi:type="expression:Expression" xmi:id="_pj-hYD_zEeemFIQjEswWsw" name="" content="" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_pj-hYT_zEeemFIQjEswWsw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_IS4VMWp7EeiCMKwuyweang" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_R17BkWtTEeirf7E1BxcYyg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_pj-hYz_zEeemFIQjEswWsw" name="singleUserAudit" definitionId="single-user" definitionVersion="1.0.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_pj-hZD_zEeemFIQjEswWsw" definitionId="single-user" version="1.0.0">
@@ -615,6 +615,68 @@
         <condition xmi:type="expression:Expression" xmi:id="_pj-h7D_zEeemFIQjEswWsw" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_pj-h7T_zEeemFIQjEswWsw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_RBdewGtTEeirf7E1BxcYyg" name="BCD" version="7.6.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_RBdewWtTEeirf7E1BxcYyg">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_RBdewmtTEeirf7E1BxcYyg" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_RBdew2tTEeirf7E1BxcYyg">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_RBdexGtTEeirf7E1BxcYyg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_RBdexWtTEeirf7E1BxcYyg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_RBdexmtTEeirf7E1BxcYyg"/>
+          </actorMapping>
+        </actorMappings>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_RBdex2tTEeirf7E1BxcYyg" type="ACTOR_FILTER" definitionId="initiator" definitionVersion="1.0.0" implementationId="initiator-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_RBdeyGtTEeirf7E1BxcYyg" type="ACTOR_FILTER" definitionId="single-user" definitionVersion="1.0.0" implementationId="single-user-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_RBdeyWtTEeirf7E1BxcYyg" type="CONNECTOR" definitionId="scripting-groovy-script" definitionVersion="1.0.1" implementationId="scripting-groovy-script-impl" implementationVersion="1.0.2"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_RBdeymtTEeirf7E1BxcYyg" type="CONNECTOR" definitionId="rest-get" definitionVersion="1.0.0" implementationId="rest-get-impl" implementationVersion="1.0.4"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_RBdey2tTEeirf7E1BxcYyg" type="CONNECTOR" definitionId="email" definitionVersion="1.0.0" implementationId="email-impl" implementationVersion="1.0.15"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RBdezGtTEeirf7E1BxcYyg" id="ACTOR_FILTER">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_RBdezWtTEeirf7E1BxcYyg" id="initiator-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RBdezmtTEeirf7E1BxcYyg" key="initiator-impl -- 1.0.0" value="bonita-userfilter-initiator-impl-1.0.0-SNAPSHOT.jar" type="ACTOR_FILTER"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_RBdez2tTEeirf7E1BxcYyg" id="single-user-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RBde0GtTEeirf7E1BxcYyg" key="single-user-impl -- 1.0.0" value="bonita-userfilter-single-user-impl-1.0.0-SNAPSHOT.jar" type="ACTOR_FILTER"/>
+          </children>
+        </processDependencies>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RBde0WtTEeirf7E1BxcYyg" id="CONNECTOR">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_RBde0mtTEeirf7E1BxcYyg" id="scripting-groovy-script-impl-1.0.2">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RBde02tTEeirf7E1BxcYyg" key="scripting-groovy-script-impl -- 1.0.2" value="bonita-connector-scripting-groovy-script-impl-1.0.2.jar" type="CONNECTOR"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_RBde1GtTEeirf7E1BxcYyg" id="rest-get-impl-1.0.4">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RBde1WtTEeirf7E1BxcYyg" key="rest-get-impl -- 1.0.4" value="bonita-connector-rest-1.0.4.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RBde1mtTEeirf7E1BxcYyg" key="rest-get-impl -- 1.0.4" value="httpcore-4.3.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RBde12tTEeirf7E1BxcYyg" key="rest-get-impl -- 1.0.4" value="httpclient-4.3.6.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RBde2GtTEeirf7E1BxcYyg" key="rest-get-impl -- 1.0.4" value="guava-18.0.jar" type="CONNECTOR"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_RBde2WtTEeirf7E1BxcYyg" id="email-impl-1.0.15">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RBde2mtTEeirf7E1BxcYyg" key="email-impl -- 1.0.15" value="bonita-connector-email-impl-1.0.15.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RBde22tTEeirf7E1BxcYyg" key="email-impl -- 1.0.15" value="mail-1.4.5.jar" type="CONNECTOR"/>
+          </children>
+        </processDependencies>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RBde3GtTEeirf7E1BxcYyg" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RBde3WtTEeirf7E1BxcYyg" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_RBde3mtTEeirf7E1BxcYyg" key="CreateUser.groovy" value="CreateUser.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_RBde32tTEeirf7E1BxcYyg" key="DeleteUser.groovy" value="DeleteUser.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_RBde4GtTEeirf7E1BxcYyg" key="OnboardingMapper.groovy" value="OnboardingMapper.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_RBde4WtTEeirf7E1BxcYyg" key="OnboardingUtil.groovy" value="OnboardingUtil.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_RBde4mtTEeirf7E1BxcYyg" key="OnboardingVersion.groovy" value="OnboardingVersion.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_RBde42tTEeirf7E1BxcYyg" key="TestMe.groovy" value="TestMe.groovy" exported="false" type="GROOVY_SCRIPT"/>
+        </processDependencies>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RBde5GtTEeirf7E1BxcYyg" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RBde5WtTEeirf7E1BxcYyg" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RBde5mtTEeirf7E1BxcYyg" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_RBde52tTEeirf7E1BxcYyg" key="CreateUser.groovy" value="CreateUser.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_RBde6GtTEeirf7E1BxcYyg" key="DeleteUser.groovy" value="DeleteUser.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_RBde6WtTEeirf7E1BxcYyg" key="OnboardingMapper.groovy" value="OnboardingMapper.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_RBde6mtTEeirf7E1BxcYyg" key="OnboardingUtil.groovy" value="OnboardingUtil.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_RBde62tTEeirf7E1BxcYyg" key="OnboardingVersion.groovy" value="OnboardingVersion.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_RBde7GtTEeirf7E1BxcYyg" key="TestMe.groovy" value="TestMe.groovy" exported="false" type="GROOVY_SCRIPT"/>
+        </applicationDependencies>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RBde7WtTEeirf7E1BxcYyg" id="VALIDATOR"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RBde7mtTEeirf7E1BxcYyg" id="OTHER"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_RBde72tTEeirf7E1BxcYyg" name="smtpHost" value="smtp.gmail.com" typeClassname="java.lang.String"/>
+      </configurations>
       <parameters xmi:type="parameter:Parameter" xmi:id="_zD1aYE0eEee_HNU5KcrMjw" name="smtpHost" typeClassname="java.lang.String"/>
       <contract xmi:type="process:Contract" xmi:id="_pj-h7j_zEeemFIQjEswWsw">
         <inputs xmi:type="process:ContractInput" xmi:id="_pj-h7z_zEeemFIQjEswWsw" name="amount" type="DECIMAL">
@@ -676,7 +738,7 @@
         <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_3shTFD_0EeemFIQjEswWsw" name="" content="" returnTypeFixed="true"/>
         <confirmationMessage xmi:type="expression:Expression" xmi:id="_3shTFT_0EeemFIQjEswWsw" name="" content="" returnTypeFixed="true"/>
         <formMapping xmi:type="process:FormMapping" xmi:id="_3shTHD_0EeemFIQjEswWsw">
-          <targetForm xmi:type="expression:Expression" xmi:id="_IX70UGp7EeiCMKwuyweang" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          <targetForm xmi:type="expression:Expression" xmi:id="_KMfyEGtTEeirf7E1BxcYyg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <filters xmi:type="process:ActorFilter" xmi:id="_r0QM8GnAEeiaJr8O391MTw" name="return walter bates" definitionId="single-user" definitionVersion="1.0.0">
           <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_r0QM8WnAEeiaJr8O391MTw" definitionId="single-user" version="1.0.0">
@@ -693,7 +755,7 @@
       <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_sU5I9D_zEeemFIQjEswWsw" name="" content="" returnTypeFixed="true"/>
       <confirmationMessage xmi:type="expression:Expression" xmi:id="_sU5I8z_zEeemFIQjEswWsw" name="" content="" returnTypeFixed="true"/>
       <formMapping xmi:type="process:FormMapping" xmi:id="_sU5I9j_zEeemFIQjEswWsw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_IX70UWp7EeiCMKwuyweang" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_KMfyEWtTEeirf7E1BxcYyg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <recapPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_sU5I9T_zEeemFIQjEswWsw" name="" content="" returnTypeFixed="true"/>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_sU5I-D_zEeemFIQjEswWsw">
@@ -709,6 +771,46 @@
         <condition xmi:type="expression:Expression" xmi:id="_6yxSUj_0EeemFIQjEswWsw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_-sy34D_0EeemFIQjEswWsw" name="Actor1" initiator="true"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_KAy4YGtTEeirf7E1BxcYyg" name="BCD" version="7.6.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_KAy4YWtTEeirf7E1BxcYyg">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_KAy4YmtTEeirf7E1BxcYyg" name="Actor1">
+            <groups xmi:type="actormapping:Groups" xmi:id="_KAy4Y2tTEeirf7E1BxcYyg">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_KAy4ZGtTEeirf7E1BxcYyg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_KAy4ZWtTEeirf7E1BxcYyg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_KAy4ZmtTEeirf7E1BxcYyg"/>
+          </actorMapping>
+        </actorMappings>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_KAy4Z2tTEeirf7E1BxcYyg" type="ACTOR_FILTER" definitionId="single-user" definitionVersion="1.0.0" implementationId="single-user-impl" implementationVersion="1.0.0"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_KAy4aGtTEeirf7E1BxcYyg" id="ACTOR_FILTER">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_KAy4aWtTEeirf7E1BxcYyg" id="single-user-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4amtTEeirf7E1BxcYyg" key="single-user-impl -- 1.0.0" value="bonita-userfilter-single-user-impl-1.0.0-SNAPSHOT.jar" type="ACTOR_FILTER"/>
+          </children>
+        </processDependencies>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_KAy4a2tTEeirf7E1BxcYyg" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_KAy4bGtTEeirf7E1BxcYyg" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_KAy4bWtTEeirf7E1BxcYyg" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4bmtTEeirf7E1BxcYyg" key="CreateUser.groovy" value="CreateUser.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4b2tTEeirf7E1BxcYyg" key="DeleteUser.groovy" value="DeleteUser.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4cGtTEeirf7E1BxcYyg" key="OnboardingMapper.groovy" value="OnboardingMapper.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4cWtTEeirf7E1BxcYyg" key="OnboardingUtil.groovy" value="OnboardingUtil.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4cmtTEeirf7E1BxcYyg" key="OnboardingVersion.groovy" value="OnboardingVersion.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4c2tTEeirf7E1BxcYyg" key="TestMe.groovy" value="TestMe.groovy" exported="false" type="GROOVY_SCRIPT"/>
+        </processDependencies>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_KAy4dGtTEeirf7E1BxcYyg" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_KAy4dWtTEeirf7E1BxcYyg" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_KAy4dmtTEeirf7E1BxcYyg" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4d2tTEeirf7E1BxcYyg" key="CreateUser.groovy" value="CreateUser.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4eGtTEeirf7E1BxcYyg" key="DeleteUser.groovy" value="DeleteUser.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4eWtTEeirf7E1BxcYyg" key="OnboardingMapper.groovy" value="OnboardingMapper.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4emtTEeirf7E1BxcYyg" key="OnboardingUtil.groovy" value="OnboardingUtil.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4e2tTEeirf7E1BxcYyg" key="OnboardingVersion.groovy" value="OnboardingVersion.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_KAy4fGtTEeirf7E1BxcYyg" key="TestMe.groovy" value="TestMe.groovy" exported="false" type="GROOVY_SCRIPT"/>
+        </applicationDependencies>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_KAy4fWtTEeirf7E1BxcYyg" id="VALIDATOR"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_KAy4fmtTEeirf7E1BxcYyg" id="OTHER"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_sU5I-j_zEeemFIQjEswWsw"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_sU4h4D_zEeemFIQjEswWsw">
         <name xmi:type="expression:Expression" xmi:id="_sU4h4T_zEeemFIQjEswWsw" content="" returnTypeFixed="true"/>
