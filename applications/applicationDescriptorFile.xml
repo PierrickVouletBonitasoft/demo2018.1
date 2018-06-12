@@ -5,7 +5,6 @@
         <applicationPages>
             <applicationPage customPage="custompage_LoanCreationPage" token="Loan"/>
             <applicationPage customPage="custompage_SampleChartPage" token="Chart"/>
-            <applicationPage customPage="custompage_OrganizationPage" token="Org"/>
         </applicationPages>
         <applicationMenus>
             <applicationMenu applicationPage="Loan">
@@ -13,9 +12,6 @@
             </applicationMenu>
             <applicationMenu applicationPage="Chart">
                 <displayName>Charts</displayName>
-            </applicationMenu>
-            <applicationMenu applicationPage="Org">
-                <displayName>Org</displayName>
             </applicationMenu>
         </applicationMenus>
     </application>

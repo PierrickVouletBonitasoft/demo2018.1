@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.4.34",
   "id" : "3840ed22-5ee4-468d-a40a-255826975d5a",
   "name" : "review",
-  "lastUpdate" : 1528397588619,
+  "lastUpdate" : 1528492355728,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -847,6 +847,38 @@
         "id" : "pbButton"
       } ] ]
     }
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : ""
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "d2be7f09-41fc-4d58-b150-2b7fa8e77a60",
+    "id" : "pbText"
   } ], [ {
     "type" : "formContainer",
     "dimension" : {

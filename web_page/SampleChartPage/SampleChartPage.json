@@ -2,7 +2,7 @@
   "designerVersion" : "1.7.49",
   "id" : "SampleChartPage",
   "name" : "SampleChartPage",
-  "lastUpdate" : 1528403064700,
+  "lastUpdate" : 1528829533944,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -312,6 +312,38 @@
       "reference" : "88b07d71-22ad-48a6-847c-16d0ab5c372c",
       "id" : "pbChart"
     } ] ]
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,<br/>consectetur,<br/>adipisci velit..."
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "e4106bb4-517f-4d86-b860-bc989e56e1c4",
+    "id" : "pbText"
   } ] ],
   "assets" : [ {
     "id" : "6325f9c0-e069-4c1a-82ed-8a43910bc1d5",
